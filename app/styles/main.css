@@ -6768,6 +6768,7 @@ button.close {
     max-width: 320px;
   }
   .navigation .container-fluid .navigation__menu .modal-backdrop {
+    margin-left: 320px;
     opacity: .8;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form {
@@ -6841,7 +6842,7 @@ button.close {
   padding-top: 50px;
 }
 .navigation .modal-backdrop {
-  margin-left: 320px;
+  margin-left: 100%;
 }
 .navigation .navigation__menu {
   border-top: none;
