@@ -6828,7 +6828,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .navigation {
-    background: url('../images/navigation.fw.png') repeat-x 0 -19px;
+    background: url('../images/navigation.fw.png') repeat-x 0 -19px !important;
     font-size: 18px !important;
   }
   .navigation .container-fluid {
@@ -9724,7 +9724,7 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
-  .navigation {
+  .navigation.footer {
     background: none !important;
   }
   .navigation.footer .container-fluid .row .fullsize,

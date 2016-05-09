@@ -80,7 +80,7 @@
   $.extend( Plugin.prototype, {
     init: function() {
       $map = $(this.element);
-      $country = $('.js-country-selector'); 
+      $country = $('.js-country-selector');
       $offices = $('.js-offices');
       GoogleMapsLoader.KEY = 'AIzaSyA7lvGhDgbfCng-3_3aORo_1lhAo4oHeL0 ';
       GoogleMapsLoader.LIBRARIES = ['geometry', 'places'];
