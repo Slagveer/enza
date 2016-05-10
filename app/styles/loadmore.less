@@ -1,15 +1,15 @@
 .loadmore {
-  padding: 20px 0;
+  padding: 20px * @retina-factor 0;
   text-align: center;
   .carousel-caption__button {
     background: none;
     border: 1px solid @dark-grey;
-    border-radius: 50px;
+    border-radius: 50px * @retina-factor;
     color: @dark-grey;
     font-family: @font-family-crete;
-    font-size: 27px;
-    height: 81px;
-    max-width: 310px;
+    font-size: 27px * @retina-factor;
+    height: 81px * @retina-factor;
+    max-width: 310px * @retina-factor;
     position: relative;
     width: 100%;
     &:hover,
@@ -30,22 +30,22 @@
     .carousel-caption__button__text {
       float: left;
       display: inline-block;
-      line-height: 67px;
-      padding-left: 100px;
+      line-height: 67px * @retina-factor;
+      padding-left: 100px * @retina-factor;
     }
     .carousel-caption__button__arrow {
-      left: 48px;
+      left: 48px * @retina-factor;
       position: absolute;
       display: flex;
-      top: 18px;
-      width: 47px;
+      top: 18px * @retina-factor;
+      width: 47px * @retina-factor;
       &.loadmore {
         top: 0px;
         -webkit-animation: rotate .6s linear infinite;
       }
       svg {
-        height: 47px;
-        width: 47px;
+        height: 47px * @retina-factor;
+        width: 47px * @retina-factor;
         path {
           fill: @dark-grey;
           stroke: @dark-grey;

@@ -11320,18 +11320,18 @@ button.close {
   opacity: .8;
 }
 .loadmore {
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
 }
 .loadmore .carousel-caption__button {
   background: none;
   border: 1px solid #515151;
-  border-radius: 50px;
+  border-radius: 25px;
   color: #515151;
   font-family: 'Crete Round', serif;
-  font-size: 27px;
-  height: 81px;
-  max-width: 310px;
+  font-size: 13.5px;
+  height: 40.5px;
+  max-width: 155px;
   position: relative;
   width: 100%;
 }
@@ -11351,23 +11351,23 @@ button.close {
 .loadmore .carousel-caption__button .carousel-caption__button__text {
   float: left;
   display: inline-block;
-  line-height: 67px;
-  padding-left: 100px;
+  line-height: 33.5px;
+  padding-left: 50px;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow {
-  left: 48px;
+  left: 24px;
   position: absolute;
   display: flex;
-  top: 18px;
-  width: 47px;
+  top: 9px;
+  width: 23.5px;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow.loadmore {
   top: 0px;
   -webkit-animation: rotate .6s linear infinite;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow svg {
-  height: 47px;
-  width: 47px;
+  height: 23.5px;
+  width: 23.5px;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow svg path {
   fill: #515151;
