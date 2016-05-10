@@ -12318,15 +12318,15 @@ button.close {
   font-weight: bold;
 }
 .extra-content {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 .extra-content .extra-content__header {
-  line-height: 80px;
+  line-height: 40px;
   font-family: 'Crete Round', serif;
-  font-size: 42px;
+  font-size: 21px;
   font-weight: bold;
-  margin-bottom: 26px;
-  margin-top: 6px;
+  margin-bottom: 13px;
+  margin-top: 3px;
   text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
