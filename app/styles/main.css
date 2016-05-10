@@ -11134,6 +11134,13 @@ button.close {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+  .container--carousel {
+    padding-bottom: 0px !important;
+  }
+  .container--carousel .fullsize {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
   .container--carousel .carousel .container--carousel__slides__item__image {
     height: 305px !important;
   }
@@ -11144,12 +11151,15 @@ button.close {
   }
   .container--carousel .carousel .thumbnail-controls .container,
   .container--carousel .carousel .thumbnail-controls .container-fluid {
-    width: 1170px !important;
+    width: 900px !important;
   }
   .container--carousel .carousel .thumbnail-controls .container .item__image__text,
   .container--carousel .carousel .thumbnail-controls .container-fluid .item__image__text {
     display: block !important;
   }
+}
+.container--carousel {
+  padding-bottom: 50px;
 }
 .container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   bottom: 43.5px;
