@@ -9308,15 +9308,18 @@ button.close {
 .teaserbox.teaserbox--extra-content .teaserbox__description {
   bottom: inherit;
   color: #515151;
+  font-size: 17px;
   left: 16px;
-  line-height: 15.5px;
+  line-height: 20px;
   top: 178px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__description .teaserbox__description__title {
   color: #515151;
-  font-size: 13.5px;
+  font-size: 17px;
+  font-weight: bold;
   line-height: 17.5px;
   padding-bottom: 6px;
+  width: 100%;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__link {
   bottom: 10px;
