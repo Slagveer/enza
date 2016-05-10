@@ -22,7 +22,7 @@
       $targetaudience = $(this.element);
       $targetaudienceSelect = $targetaudience.find('.js-targetaudience');
       $targetaudience.on('change', function onChange(evt) {
-        evt.preventDefault(); console.log('sssss');
+        evt.preventDefault();
         $targetaudience.submit();
       });
     }
