@@ -7953,7 +7953,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow {
     right: 8px;
-    top: -6px;
+    top: 5px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
     line-height: 37px;
