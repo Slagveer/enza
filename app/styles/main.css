@@ -6889,6 +6889,9 @@ button.close {
   color: #515151;
   padding: 19px 0px 19px 23.5px;
 }
+.navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label .menu {
+  height: 25px;
+}
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label:hover {
   color: #aac426;
 }
@@ -7962,6 +7965,7 @@ button.close {
     top: 14px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow {
+    height: 24px;
     right: -5px;
     top: 8px;
     width: 24px;
@@ -8015,6 +8019,9 @@ button.close {
     position: relative;
     top: 11px;
     width: 21px;
+  }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label .contact-icon svg {
+    height: 24px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg path,
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover .contact-icon svg polygon {
@@ -8074,6 +8081,7 @@ button.close {
     max-width: 120px;
     top: 39px;
     right: 18px;
+    width: 120px;
   }
   .navigation {
     border-radius: 0;
