@@ -8264,6 +8264,7 @@ button.close {
   .navigation .navbar-header.flex {
     background-color: #fff;
     display: flex;
+    top: -3px;
   }
   .navigation .navigation__button {
     border-radius: 0;
