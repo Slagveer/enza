@@ -9993,6 +9993,7 @@ button.close {
 }
 .variety-detail .variety-detail__container .variety-detail__list .variety-detail__list__title {
   font-weight: bold;
+  width: 50px;
 }
 .variety-detail .variety-detail__container .variety-detail__list .variety-detail__list__description {
   margin-bottom: 19.5px;
