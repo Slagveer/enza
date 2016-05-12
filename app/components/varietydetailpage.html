@@ -139,7 +139,12 @@
                     <div class="teaserbox__overlay fade">&nbsp;</div>
                     <div class="teaserbox__overlay-bottom">&nbsp;</div>
                     <figure>
-                      <img class="teaserbox__image" src="http://dummyimage.com/640x500/ff0000/fff" alt="">
+                      <picture>
+                        <source srcset="http://loremflickr.com/240/130/news?random=5" media="(min-width: 1200px)">
+                        <source srcset="http://loremflickr.com/240/130/news?random=5" media="(min-width: 768px)">
+                        <source srcset="http://loremflickr.com/240/130/news?random=5">
+                        <img class="teaserbox__image" src="http://loremflickr.com/240/130/news?random=5" alt="">
+                      </picture>
                       <figcaption class="teaserbox__description">
                         <p class="teaserbox__description__label">
                           <span class="label-square">NEWS</span>
@@ -484,6 +489,8 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/hisrc/hisrc.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
