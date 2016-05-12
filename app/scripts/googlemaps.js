@@ -10,11 +10,13 @@
     $countrySelectorTemplate,
     $country,
     $offices,
+    $countryForm,
     marker,
     markers = [],
     officeMarkers = [],
     geocoder,
     countries,
+    mapType,
     countriesUnique,
     countriesJSON,
     selectedCountry,
@@ -82,6 +84,8 @@
       $map = $(this.element);
       $country = $('.js-country-selector');
       $offices = $('.js-offices');
+      $countryForm = $('.js-country-form');
+      mapType = $country.data('maptype');
       GoogleMapsLoader.KEY = 'AIzaSyA7lvGhDgbfCng-3_3aORo_1lhAo4oHeL0 ';
       GoogleMapsLoader.LIBRARIES = ['geometry', 'places'];
       GoogleMapsLoader.load(googleLoaded);
@@ -95,7 +99,7 @@
     map = new google.maps.Map($map[0],{
       center: {lat: -34.397, lng: 150.644},
       scrollwheel: true,
-      zoom: 4
+      zoom: (mapType === 'worldwide') ? 2 : 4
     });
     map.mapTypes.set('enza', enzaMapType);
     map.setMapTypeId('enza');
@@ -126,7 +130,13 @@
   function onChange(evt) {
     evt.preventDefault();
     selectedCountry = evt.target.value;
-    map.setCenter(new google.maps.LatLng(countries[selectedCountry][0],countries[selectedCountry][1]));
+    if(selectedCountry) {
+      if(mapType === 'worldwide') {
+        $countryForm.submit();
+      } else {
+        map.setCenter(new google.maps.LatLng(countries[selectedCountry][0], countries[selectedCountry][1]));
+      }
+    }
     addOffices(selectedCountry);
     addOfficesList(selectedCountry);
   }
@@ -144,12 +154,21 @@
   }
 
   function addOffices(country) {
-    var offices;
+    var offices,
+      markedCountries = [];
+
 
     country = (_.isUndefined(country)) ? $country[0].value : country;
-    offices = _.where(countriesJSON.countries, {"Code": country.toUpperCase()});
+    if(country === '') {
+      markedCountries = _.keys(countries);
+    } else {
+      markedCountries.push(country);
+    }
+    _.each(markedCountries, function readMarkedCountries(markedCountry) {
 
-    if(geocoder) {
+      offices = _.where(countriesJSON.countries, {"Code": markedCountry.toUpperCase()});
+
+      if(geocoder) {
       _.each(offices, function getOfficeAddress(office) {
         _.extend(office, {
           "TypeName": (office['Type'] === 'Commercial') ? 'Distrubitor' : 'Office'
@@ -173,13 +192,13 @@
               content: html,
               size: new google.maps.Size(150, 50)
             });
-            if (!_.isUndefined(results[0])) {
+            if (results && !_.isUndefined(results[0])) {
               map.setCenter(results[0].geometry.location);
               marker = new google.maps.Marker({
                 position: results[0].geometry.location,
                 icon: (office['Type'] === 'Commercial') ? building : forklift,
                 map: map,
-                title: country
+                title: markedCountry
               });
               officeMarkers.push(marker);
               google.maps.event.addListener(_.last(officeMarkers), 'click', function() {
@@ -190,6 +209,7 @@
         }
       });
     }
+    });
   }
 
   function addOfficesList(country) {
@@ -199,7 +219,7 @@
     offices = _.where(countriesJSON.countries, {
       "Code": country.toUpperCase()
     });
-    if($offices) {
+    if($offices && mapType !== 'worldwide') {
       $offices.empty();
       _.each(offices, function readOffice(office) {
         var source,

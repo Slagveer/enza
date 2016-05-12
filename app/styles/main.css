@@ -12452,7 +12452,13 @@ button.close {
 .sortby .numberresults .numberresults__header .numberresults__header__container .numberresults__header__container__text.sort {
   margin-left: 20px;
 }
+.map,
+.googlemaps-map,
+.googlemaps-lands {
+  display: none;
+}
 .googlemaps {
+  display: none;
   margin-bottom: 12px;
   padding: 10px 0;
   text-align: left;
