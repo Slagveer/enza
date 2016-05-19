@@ -19,7 +19,7 @@
         $carousel.swiperight(function () {
           $carousel.carousel('prev');
         });
-        $carousel.swipeleft(function () {
+        $carousel.swipeleft(function () { 
           $carousel.carousel('next');
         });
         $carousel.on('slid.bs.carousel', function slideIt(e){
