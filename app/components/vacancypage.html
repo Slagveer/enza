@@ -26,8 +26,8 @@
 <div class="container vacancy">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
-      <section>
-        <img class="vacancy__image" src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+      <section class="vacancy__image js-vacancy__image">
+        <img src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
         <span class="vacancy__image-title">Careers & Learning</span>
       </section>
     </div>
@@ -165,7 +165,9 @@
             <div class="teaserbox__overlay fade">&nbsp;</div>
             <div class="teaserbox__overlay-bottom">&nbsp;</div>
             <figure>
-              <img class="teaserbox__image" src="http://dummyimage.com/640x500/ff0000/fff" alt="">
+              <div class="teaserbox__image js-teaserbox__image">
+                <img src="http://loremflickr.com/320/250/vegetables?random=3" alt="">
+              </div>
               <figcaption class="teaserbox__description">
                 <p class="teaserbox__description__title">Tomatoes
                 </p>
@@ -201,7 +203,9 @@
             <div class="teaserbox__overlay fade">&nbsp;</div>
             <div class="teaserbox__overlay-bottom">&nbsp;</div>
             <figure>
-              <img class="teaserbox__image" src="http://dummyimage.com/640x500/ff0000/fff" alt="">
+              <div class="teaserbox__image js-teaserbox__image">
+                <img src="http://loremflickr.com/320/250/vegetables?random=3" alt="">
+              </div>
               <figcaption class="teaserbox__description">
                 <p class="teaserbox__description__title">Tomatoes
                 </p>
@@ -237,7 +241,9 @@
             <div class="teaserbox__overlay fade">&nbsp;</div>
             <div class="teaserbox__overlay-bottom">&nbsp;</div>
             <figure>
-              <img class="teaserbox__image" src="http://dummyimage.com/640x500/ff0000/fff" alt="">
+              <div class="teaserbox__image js-teaserbox__image">
+                <img src="http://loremflickr.com/320/250/vegetables?random=3" alt="">
+              </div>
               <figcaption class="teaserbox__description">
                 <p class="teaserbox__description__title">Tomatoes
                 </p>
@@ -280,7 +286,7 @@
   <div class="container container--carousel container--carousel-detail">
     <div class="row">
       <div class="col-xs-12 col-sm-12 fullsize">
-        <div id="carousel-example-generic" class="carousel carousel--detail slide js-carousel" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel carousel--detail slide carousel-fade js-carousel" data-ride="carousel">
           <!-- CAROUSEL-INDICATORS::START -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -291,7 +297,9 @@
           <!-- CAROUSEL-SLIDES::START -->
           <div class="carousel-inner container--carousel__slides" role="listbox">
             <div class="item active container--carousel__slides__item">
-              <img class="container--carousel__slides__item__image hiscr" src="http://loremflickr.com/2640/305/news?random=1" data-1x="http://loremflickr.com/5280/610/news?random=1" data-2x="http://loremflickr.com/15060/1220/news?random=1" alt="Slide 1">
+              <div class="container--carousel__slides__item__image js-container--carousel__slides__item__image">
+                <img src="http://loremflickr.com/2640/2000/news?random=1" alt="Slide 1">
+              </div>
               <div class="carousel-caption">
                 <blockquote class="carousel-caption__quote">
                   Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
@@ -301,7 +309,9 @@
               </div>
             </div>
             <div class="item container--carousel__slides__item">
-              <img class="container--carousel__slides__item__image hiscr" src="http://loremflickr.com/2640/305/news?random=2" data-1x="http://loremflickr.com/5280/610/news?random=2" data-2x="http://loremflickr.com/15060/1220/news?random=2" alt="Slide 2">
+              <div class="container--carousel__slides__item__image js-container--carousel__slides__item__image">
+                <img src="http://loremflickr.com/2640/2000/news?random=2" alt="Slide 2">
+              </div>
               <div class="carousel-caption">
                 <blockquote class="carousel-caption__quote">
                   Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
@@ -311,7 +321,9 @@
               </div>
             </div>
             <div class="item container--carousel__slides__item">
-              <img class="container--carousel__slides__item__image hiscr" src="http://loremflickr.com/2640/305/news?random=3" data-1x="http://loremflickr.com/5280/610/news?random=3" data-2x="http://loremflickr.com/15060/1220/news?random=3" alt="Slide 3">
+              <div class="container--carousel__slides__item__image js-container--carousel__slides__item__image">
+                <img src="http://loremflickr.com/2640/2000/news?random=3" alt="Slide 3">
+              </div>
               <div class="carousel-caption">
                 <blockquote class="carousel-caption__quote">
                   Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero.
@@ -397,6 +409,10 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
@@ -406,6 +422,7 @@
 <script src="/scripts/loadmore.js"></script>
 <script src="/scripts/main.js"></script>
 <script src="/scripts/navigation.js"></script>
+<script src="/scripts/scrolltotop.js"></script>
 <script src="/scripts/targetaudience.js"></script>
 <script src="/scripts/teaserbox.js"></script>
 <!-- endfileblock -->

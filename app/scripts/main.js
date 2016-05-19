@@ -14,7 +14,7 @@
       });
       if($carousel) {
         $carousel.carousel({
-          interval: 800000
+          interval: 8000
         });
         $carousel.swiperight(function () {
           $carousel.carousel('prev');
@@ -40,12 +40,19 @@
           maxCheckboxes: 5
         });
       }
-      $('.hirsc').hisrc({
-        useTransparentGif: false,
-        speedTestUri: '../bower_components/hisrc/50K.jpg'
-      });
+      // $('.hirsc').hisrc({
+      //   useTransparentGif: false,
+      //   speedTestUri: '../bower_components/hisrc/50K.jpg'
+      // });
       $('.js-maps').googlemaps();
       $('.js-teaserbox__image').imagefill();
+      $('.js-item__image').imagefill();
+      $('.js-container--carousel__slides__item__image').imagefill();
+      $('.js-variety-detail__image').imagefill();
+      $('.js-itemslist__item__image').imagefill();
+      $('.js-growings-advisors__image').imagefill();
+      $('.js-vacancy__image').imagefill();
+      $('.js-scroll-top-wrapper').scrolltotop();
     });
   });
 }());

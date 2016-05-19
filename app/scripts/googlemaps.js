@@ -104,24 +104,22 @@
     map.mapTypes.set('enza', enzaMapType);
     map.setMapTypeId('enza');
     forklift = {
-      url: '../images/forklifttruck.png',
+      url: '/images/forklifttruck.png',
       size: new google.maps.Size(40, 64),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
     }
     building = {
-      url: '../images/officebuilding.png',
+      url: '/images/officebuilding.png',
       size: new google.maps.Size(40, 64),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
     };
     geocoder = new google.maps.Geocoder();
     countries = $country.data('offices');
-    countriesJSON = JSON.parse(countries);
-    countriesUnique = _.uniq(_.pluck(countriesJSON.countries, 'Land'));
-    _.each(countriesJSON.countries, readCountries);
-    countries = $country.data('countries');
-    countries = JSON.parse(countries);
+    countriesJSON = countries;
+    countriesUnique = _.uniq(_.pluck(countriesJSON.countries, 'Code'));
+
     $country.on('change', onChange);
     addOffices();
     addOfficesList();
@@ -138,23 +136,11 @@
         $countryForm.attr('action', countrypage);
         $countryForm.submit();
       } else {
-        map.setCenter(new google.maps.LatLng(countries[selectedCountry][0], countries[selectedCountry][1]));
+        // /map.setCenter(new google.maps.LatLng(countries[selectedCountry][0], countries[selectedCountry][1]));
       }
     }
     addOffices(selectedCountry);
     addOfficesList(selectedCountry);
-  }
-
-  function readCountries(country) {
-    var source,
-      template,
-      html;
-
-    $countrySelectorTemplate = $('#googlemaps-selector-template');
-    source = $countrySelectorTemplate.html(),
-      template = Handlebars.compile(source),
-      html = template(country);
-    //$country.append(html);
   }
 
   function addOffices(country) {
@@ -164,7 +150,7 @@
 
     country = (_.isUndefined(country)) ? $country[0].value : country;
     if(country === '') {
-      markedCountries = _.keys(countries);
+      markedCountries = countriesUnique;
     } else {
       markedCountries.push(country);
     }
@@ -172,47 +158,40 @@
 
       offices = _.where(countriesJSON.countries, {"Code": markedCountry.toUpperCase()});
 
-      if(geocoder) {
-      _.each(offices, function getOfficeAddress(office) {
+      _.each(offices, function getOfficeLatLng(office) {
+        var $infoTemplate = $('#googlemaps-info-template'),
+          source,
+          html,
+          template,
+          latlng,
+          infowindow;
+
         _.extend(office, {
-          "TypeName": (office['Type'] === 'Commercial') ? 'Distrubitor' : 'Office'
+          "TypeName": (office['Type'] === 'Commercial') ? 'Distributor' : 'Office'
         });
         if(_.where(markers, office).length === 0) {
           markers.push(office);
-          geocoder.geocode({
-            //'address': office['Adresregel 1']
-            'address': office['Postcode'] + ',' + office['Plaats'] + ',' + office['Land']
-          }, function (results, status) {
-            var $infoTemplate = $('#googlemaps-info-template'),
-              source,
-              html,
-              template,
-              infowindow;
-
-            source = $infoTemplate.html(),
-              template = Handlebars.compile(source),
-              html = template(office);
-            infowindow = new google.maps.InfoWindow({
-              content: html,
-              size: new google.maps.Size(150, 50)
-            });
-            if (results && !_.isUndefined(results[0])) {
-              map.setCenter(results[0].geometry.location);
-              marker = new google.maps.Marker({
-                position: results[0].geometry.location,
-                icon: (office['Type'] === 'Commercial') ? building : forklift,
-                map: map,
-                title: markedCountry
-              });
-              officeMarkers.push(marker);
-              google.maps.event.addListener(_.last(officeMarkers), 'click', function() {
-                infowindow.open(map, this);
-              });
-            }
+          latlng = new google.maps.LatLng(parseFloat(office.Latitude), parseFloat(office.Longitude));
+          source = $infoTemplate.html();
+          template = Handlebars.compile(source);
+          html = template(office);
+          infowindow = new google.maps.InfoWindow({
+            content: html,
+            size: new google.maps.Size(150, 50)
+          });
+          map.setCenter(latlng);
+          marker = new google.maps.Marker({
+            position: latlng,
+            icon: (office['Type'] === 'Commercial') ? building : forklift,
+            map: map,
+            title: markedCountry
+          });
+          officeMarkers.push(marker);
+          google.maps.event.addListener(_.last(officeMarkers), 'click', function() {
+            infowindow.open(map, this);
           });
         }
       });
-    }
     });
   }
 

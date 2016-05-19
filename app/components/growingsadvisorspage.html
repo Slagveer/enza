@@ -26,14 +26,14 @@
   <!-- GROWINGS-ADVISORS-HEADER::START -->
   <div class="row">
     <div class="col-xs-12 col-sm-12 fullsize">
-      <section>
+      <section class="js-growings-advisors__image">
         <img class="growings-advisors__image" src="../images/dummy/home3.png" alt="">
         <span class="growings-advisors__image-title">Growings advisors</span>
       </section>
     </div>
   </div>
 </div>
-<div class="container-fluid growings-advisors">
+<div class="container growings-advisors">
   <div class="row">
     <div class="col-xs-12 col-sm-5">
       <section class="growings-advisors__header">
@@ -222,7 +222,7 @@
       </div>
       <!-- GROWINGS-BANNERSLIST-ITEM::END -->
       <!-- GROWINGS-BANNERSLIST-PAGING::START -->
-      <div class="col-xs-12 col-sm-12">
+      <div class="col-xs-12 col-sm-offset-5 col-sm-7 col-md-offset-5 col-md-7 col-lg-offset-5 col-lg-7">
         <div class="growingsbannerslist__paging">
           <a class="growingsbannerslist__paging__link growingsbannerslist__paging__link--left disabled" href="#" title="previous">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -289,6 +289,10 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
@@ -298,6 +302,7 @@
 <script src="/scripts/loadmore.js"></script>
 <script src="/scripts/main.js"></script>
 <script src="/scripts/navigation.js"></script>
+<script src="/scripts/scrolltotop.js"></script>
 <script src="/scripts/targetaudience.js"></script>
 <script src="/scripts/teaserbox.js"></script>
 <!-- endfileblock -->

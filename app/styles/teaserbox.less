@@ -19,14 +19,16 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .container {
-    .row {
-      .fullsize {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-        .teaserbox {
-          &.teaserbox--icon {
-            margin-left: -15.5px;
-            margin-right: -14.5px;
+    &.container--teaserboxes {
+      .row {
+        .fullsize {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+          .teaserbox {
+            &.teaserbox--icon {
+              margin-left: -15.5px;
+              margin-right: -14.5px;
+            }
           }
         }
       }

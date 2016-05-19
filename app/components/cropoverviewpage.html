@@ -27,8 +27,8 @@
 <div class="container-fluid variety-detail">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
-      <section>
-        <img class="variety-detail__image hisrc" src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
+      <section class="variety-detail__image js-variety-detail__image">
+        <img src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
         <span class="variety-detail__image-title">Tomatos</span>
       </section>
     </div>
@@ -65,7 +65,9 @@
             <div class="teaserbox__overlay fade">&nbsp;</div>
             <div class="teaserbox__overlay-bottom">&nbsp;</div>
             <figure>
-              <img class="teaserbox__image hirsc" src="http://loremflickr.com/320/250/vegetables?random=1" data-1x="http://loremflickr.com/640/500/vegetables?random=1" data-2x="http://loremflickr.com/1280/1000/vegetables?random=1" alt="">
+              <div class="teaserbox__image js-teaserbox__image">
+                <img src="http://loremflickr.com/320/250/vegetables?random=1" alt="">
+              </div>
               <figcaption class="teaserbox__description">
                 <p class="teaserbox__description__label">
                   <span class="label-square">NEWS</span>
@@ -104,7 +106,9 @@
             <div class="teaserbox__overlay fade">&nbsp;</div>
             <div class="teaserbox__overlay-bottom">&nbsp;</div>
             <figure>
-              <img class="teaserbox__image hirsc" src="http://loremflickr.com/320/250/vegetables?random=2" data-1x="http://loremflickr.com/640/500/vegetables?random=2" data-2x="http://loremflickr.com/1280/1000/vegetables?random=2" alt="">
+              <div class="teaserbox__image js-teaserbox__image">
+                <img src="http://loremflickr.com/320/250/vegetables?random=2" alt="">
+              </div>
               <figcaption class="teaserbox__description">
                 <p class="teaserbox__description__label">
                   <span class="label-square">NEWS</span>
@@ -143,7 +147,9 @@
             <div class="teaserbox__overlay fade">&nbsp;</div>
             <div class="teaserbox__overlay-bottom">&nbsp;</div>
             <figure>
-              <img class="teaserbox__image hirsc" src="http://loremflickr.com/320/250/vegetables?random=3" data-1x="http://loremflickr.com/640/500/vegetables?random=3" data-2x="http://loremflickr.com/1280/1000/vegetables?random=3" alt="">
+              <div class="teaserbox__image js-teaserbox__image">
+                <img src="http://loremflickr.com/320/250/vegetables?random=3" alt="">
+              </div>
               <figcaption class="teaserbox__description">
                 <p class="teaserbox__description__label">
                   <span class="label-square">NEWS</span>
@@ -208,7 +214,10 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
-<script src="../bower_components/hisrc/hisrc.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
@@ -218,6 +227,7 @@
 <script src="/scripts/loadmore.js"></script>
 <script src="/scripts/main.js"></script>
 <script src="/scripts/navigation.js"></script>
+<script src="/scripts/scrolltotop.js"></script>
 <script src="/scripts/targetaudience.js"></script>
 <script src="/scripts/teaserbox.js"></script>
 <!-- endfileblock -->
