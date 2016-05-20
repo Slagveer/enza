@@ -11312,7 +11312,7 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   position: absolute;
-  background-color: #aac426;
+  background-color: #515151;
   height: 102%;
   width: 100%;
   opacity: 0.8;
