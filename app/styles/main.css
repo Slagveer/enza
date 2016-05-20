@@ -12606,7 +12606,7 @@ button.close {
   /* Chrome, Safari, Opera */
   transform: rotate(180deg);
 }
-.scroll-top-wrapper .scroll-top-inner .svg {
+.scroll-top-wrapper .scroll-top-inner svg {
   left: -13px;
   position: absolute;
   top: 0px;
