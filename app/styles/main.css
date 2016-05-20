@@ -11334,7 +11334,6 @@ button.close {
   width: 100%;
   z-index: 2;
 }
-.container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:hover .item__overlay,
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
   opacity: .8;
 }
