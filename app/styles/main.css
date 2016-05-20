@@ -9967,6 +9967,7 @@ button.close {
 .variety-detail .variety-detail__header .variety-detail__title {
   font-family: 'Crete Round', serif;
   font-size: 32px;
+  margin-top: 15px;
   padding-left: 13px;
   padding-top: 27.5px;
 }
