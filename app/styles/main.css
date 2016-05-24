@@ -10529,6 +10529,7 @@ button.close {
 }
 .enza-checkbox .enza-checkbox__element {
   margin: 0 0 0;
+  opacity: 0;
 }
 .enza-checkbox .enza-checkbox__element:checked + .enza-checkbox__label {
   border: 1px solid #aac426;
@@ -10682,7 +10683,7 @@ button.close {
 }
 .filter .filter__selected .filter__selected__button.clear,
 .filter .filter__select .filter__selected__button.clear {
-  line-height: 8px;
+  line-height: 5px;
 }
 .filter .filter__selected .filter__select__button,
 .filter .filter__select .filter__select__button {
@@ -11321,7 +11322,8 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
   border: none;
-  height: 56.5px;
+  bottom: -1px;
+  height: 57px;
   width: 100%;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {

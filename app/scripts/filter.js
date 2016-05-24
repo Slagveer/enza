@@ -8,7 +8,8 @@
     },
     $filter,
     $checkboxes,
-    $filterGroups;
+    $filterGroups,
+    $filterLessButton;
 
   function Plugin ( element, options ) {
     this.element = element;
@@ -28,19 +29,40 @@
         var $filterButton;
 
         $filterButton = $(group).find('.js-filter-btn');
+        $filterLessButton = $(group).find('.js-filter-less-btn');
         $checkboxes = $(group).find('.js-filter-checkbox');
         $($filterButton).data('checkboxes', $checkboxes);
+        $($filterButton).data('filterlessbutton', $filterLessButton);
         $($filterButton).on('click', function onClick(evt) {
           evt.preventDefault();
           $checkboxes = $filterButton.data('checkboxes');
+          $filterLessButton = $filterButton.data('filterlessbutton');
           $checkboxes.show();
+          $filterLessButton.toggleClass('hidden');
+          $filterButton.toggleClass('hidden');
         });
+        $($filterLessButton).on('click', function onClick(evt) {
+          evt.preventDefault();
+          $checkboxes = $filterButton.data('checkboxes');
+          $filterLessButton = $filterButton.data('filterlessbutton');
+          $checkboxes.hide();
+          showCheckboxes($checkboxes);
+          $filterLessButton.toggleClass('hidden');
+          $filterButton.toggleClass('hidden');
+        });
+        showCheckboxes($checkboxes);
+        if($checkboxes.length === 5) {
+          $filterButton.hide();
+        }
+      });
+
+      function showCheckboxes($checkboxes) {
         _.each($checkboxes, function(checkbox, index) {
           if(index < me.settings.maxCheckboxes) {
             $(checkbox).show();
           }
         });
-      });
+      }
     }
   } );
 
