@@ -41,7 +41,9 @@
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
       <section>
-        <img class="content__image" src="../images/dummy/landingpage-banner1.png" alt="">
+        <div class="content__image js-content__image">
+          <img class="" src="../images/dummy/landingpage-banner1.png" alt="">
+        </div>
       </section>
     </div>
     <!-- CONTENT-INTRODUCTION-HEADER::END -->
@@ -82,8 +84,8 @@
     <!-- CONTENT-INTRODUCTION-BODY::START -->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <section>
-        <figure>
-          <img class="content__image--small" src="../images/dummy/landingpage-banner1.png" alt="">
+        <figure class="content__image--small js-content__image--small">
+          <img src="../images/dummy/landingpage-banner1.png" alt="">
           <figcaption class="content__image__caption">
             This is an interesting caption beneath a picture or 16:9 video
             <span class="producer">Photography by James Doe</span>
@@ -111,8 +113,8 @@
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <section>
-        <figure>
-          <img class="content__image--extra-small" src="../images/dummy/landingpage-banner1.png" alt="">
+        <figure class="content__image--extra-small js-content__image--extra-small">
+          <img src="../images/dummy/landingpage-banner1.png" alt="">
         </figure>
       </section>
     </div>
@@ -133,7 +135,9 @@
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
       <section class="content__introduction content__introduction--image">
-        <img class="content__introduction--image__image" src="../images/dummy/landingpage-banner1.png" alt="">
+        <div class="content__introduction--image__image js-content__introduction--image__image">
+          <img src="../images/dummy/landingpage-banner1.png" alt="">
+        </div>
         <blockquote class="content__introduction--image__title">"This enable us to respond better to the grower needs."</blockquote>
       </section>
     </div>
@@ -238,7 +242,9 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
       <article class="article--list">
         <a href="#" title="" class="itemslist__item">
-          <img class="itemslist__item__image" src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+          <div class="itemslist__item__image js-itemslist__item__image">
+            <img src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+          </div>
           <div class="itemslist__item__content">
             <header>
               <p class="itemslist__item__title">
@@ -273,7 +279,9 @@
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
       <article class="article--list">
         <a href="#" title="" class="itemslist__item">
-          <img class="itemslist__item__image" src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+          <div class="itemslist__item__image js-itemslist__item__image">
+            <img src="http://dummyimage.com/1000x800/ff0000/fff" alt="">
+          </div>
           <div class="itemslist__item__content">
             <header>
               <p class="itemslist__item__title">
@@ -338,7 +346,10 @@
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
 <script src="../bower_components/handlebars/handlebars.js"></script>
-<script src="../bower_components/hisrc/hisrc.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>

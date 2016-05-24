@@ -10215,7 +10215,7 @@ button.close {
   .content__introduction__title.quote {
     left: -300px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 54%;
   }
   .container.content .row:nth-child(2) .content__paragraaf {
@@ -10225,6 +10225,7 @@ button.close {
     background-color: white;
     margin-bottom: -71px;
     margin-left: -50px;
+    margin-right: -20px;
     padding-left: 50px;
     padding-top: 50px;
     position: relative;
@@ -10245,6 +10246,7 @@ button.close {
     background-color: white;
     margin-bottom: -71px;
     margin-left: -50px;
+    margin-right: -1px;
     padding-left: 50px;
     padding-top: 50px;
     position: relative;
@@ -10311,12 +10313,12 @@ button.close {
 }
 .content .content__image--small {
   height: 206px;
+  margin-bottom: 15px;
   padding-top: 27.5px;
   width: 100%;
 }
 .content .content__image--extra-small {
   height: 141px;
-  margin-bottom: -19px;
   padding: 9px 0 35.5px 0;
   width: 100%;
 }
@@ -10387,8 +10389,8 @@ button.close {
 }
 .content .content__introduction.content__introduction--image .content__introduction--image__image {
   height: 197.5px;
-  margin-bottom: 24px;
-  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   padding: 0 5px;
   width: 100%;
 }
