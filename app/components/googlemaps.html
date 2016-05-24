@@ -27,8 +27,8 @@
 <div class="container-fluid variety-detail">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
-      <section>
-        <img class="variety-detail__image hisrc" src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
+      <section class="variety-detail__image js-variety-detail__image">
+        <img src="http://loremflickr.com/1200/250/news?random=1" alt="">
         <span class="variety-detail__image-title">Tomatos</span>
       </section>
     </div>
@@ -61,7 +61,7 @@
   <div class="row">
     <div class="col-xs-offset-5 col-sm-offset-5 col-md-offset-5 col-lg-offset-5 col-xs-7 col-sm-7 col-md-7 col-lg-7">
       <div class="googlemaps visible-sm visible-md visible-lg">
-        <form action="#">
+        <form action="#" class="js-country-form">
           <label for="country" class="googlemaps__label">Countries</label>
           <select id="country" name="country" class="googlemaps__select js-country-selector"
                   data-offices="{ &quot;countries&quot;: [{ &quot;Winkelcode&quot;: &quot;&quot;,
@@ -137,28 +137,31 @@
 &quot;Longitude&quot;: &quot;-5.5&quot;,
 &quot;Latitude&quot;: &quot;55.3&quot;,
 &quot;ImageSrc&quot;: &quot;/-/media/enza-zaden/enza-zaden-global/home4.ashx&quot;} ]}">
-            <option class="googlemaps__select__option" value="nl" selected>
+            <option class="googlemaps__select__option js-option" value="nl" selected data-countrypage="testcountrypage.html">
               Nederland
             </option>
-            <option class="googlemaps__select__option" value="us">
+            <option class="googlemaps__select__option js-option" value="us" data-countrypage="testcountrypage.html">
               Verenigde Staten
             </option>
-            <option class="googlemaps__select__option" value="gb">
+            <option class="googlemaps__select__option js-option" value="nl" data-countrypage="testcountrypage.html">
+              Nederland
+            </option>
+            <option class="googlemaps__select__option js-option" value="gb" data-countrypage="testcountrypage.html">
               Verenigd Koningkrijk
             </option>
-            <option class="googlemaps__select__option" value="br">
+            <option class="googlemaps__select__option js-option" value="br" data-countrypage="testcountrypage.html">
               Brazilie
             </option>
-            <option class="googlemaps__select__option" value="es">
+            <option class="googlemaps__select__option js-option" value="es" data-countrypage="testcountrypage.html">
               Spanje
             </option>
-            <option class="googlemaps__select__option" value="it">
+            <option class="googlemaps__select__option js-option" value="it" data-countrypage="testcountrypage.html">
               Italie
             </option>
-            <option class="googlemaps__select__option" value="ch">
+            <option class="googlemaps__select__option js-option" value="ch" data-countrypage="testcountrypage.html">
               China
             </option>
-            <option class="googlemaps__select__option" value="mx">
+            <option class="googlemaps__select__option js-option" value="mx" data-countrypage="testcountrypage.html">
               Mexico
             </option>
           </select>

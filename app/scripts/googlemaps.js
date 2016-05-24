@@ -131,13 +131,9 @@
     evt.preventDefault();
     selectedCountry = evt.target.value;
     if(selectedCountry) {
-      if(mapType === 'worldwide') {
-        countrypage = $country.find('.js-option[value="' + selectedCountry + '"]').data('countrypage');
-        $countryForm.attr('action', countrypage);
-        $countryForm.submit();
-      } else {
-        // /map.setCenter(new google.maps.LatLng(countries[selectedCountry][0], countries[selectedCountry][1]));
-      }
+      countrypage = $country.find('.js-option[value="' + selectedCountry + '"]').data('countrypage');
+      $countryForm.attr('action', countrypage);c
+      $countryForm.submit();
     }
     addOffices(selectedCountry);
     addOfficesList(selectedCountry);
