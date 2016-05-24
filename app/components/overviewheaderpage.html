@@ -27,8 +27,8 @@
 <div class="container-fluid variety-detail">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullsize">
-      <section>
-        <img class="variety-detail__image hisrc" src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
+      <section class="variety-detail__image js-variety-detail__image">
+        <img src="http://loremflickr.com/1200/250/news?random=1" data-1x="http://loremflickr.com/2400/500/news?random=1" data-2x="http://loremflickr.com/news/news/4400/1000?random=1" alt="">
         <span class="variety-detail__image-title">Tomatos</span>
       </section>
     </div>
@@ -82,6 +82,11 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
+<script src="../bower_components/handlebars/handlebars.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>
