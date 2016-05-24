@@ -132,7 +132,7 @@
     selectedCountry = evt.target.value;
     if(selectedCountry) {
       countrypage = $country.find('.js-option[value="' + selectedCountry + '"]').data('countrypage');
-      $countryForm.attr('action', countrypage);c
+      $countryForm.attr('action', countrypage);
       $countryForm.submit();
     }
     addOffices(selectedCountry);
