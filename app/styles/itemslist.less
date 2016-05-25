@@ -9,6 +9,7 @@
     .article--list {
       .itemslist__item {
         .itemslist__item__content {
+          width: 100%;
           .itemslist__item__description {
             &.block-with-text {
               max-width: 80%;
@@ -30,6 +31,7 @@
     .article--list {
       .itemslist__item {
         .itemslist__item__content {
+          width: 100%;
           .itemslist__item__description {
             &.block-with-text {
               max-width: 80%;
@@ -95,6 +97,7 @@
     }
     .itemslist__item__content {
       padding-left: 30px * @retina-factor;
+      width: 100%;
       .itemslist__item__title {
         border: 1px solid @grey;
         clear: right;
@@ -125,7 +128,7 @@
         &.block-with-text {
           display: block; /* Fallback for non-webkit */
           display: -webkit-box;
-          max-width: 343px * @retina-factor;
+          max-width: 80%;//343px * @retina-factor;
           height: 25px * @line-height * @lines-to-show * @retina-factor; /* Fallback for non-webkit */
           margin: 0 auto;
           font-size: 30px * @retina-factor;
