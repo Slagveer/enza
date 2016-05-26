@@ -1257,19 +1257,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 45pt;
+  font-size: 32.5px;
 }
 h2,
 .h2 {
-  font-size: 30pt;
+  font-size: 21.66666667px;
 }
 h3,
 .h3 {
-  font-size: 21pt;
+  font-size: 15.16666667px;
 }
 h4,
 .h4 {
-  font-size: 16pt;
+  font-size: 11.55555556px;
 }
 h5,
 .h5 {
@@ -12343,18 +12343,50 @@ button.close {
   font-size: 12.5px;
   font-weight: normal;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  p.quote {
+    left: -300px;
+    position: absolute;
+    top: 10%;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  p.quote {
+    left: -300px;
+    position: absolute;
+    top: 10%;
+    width: 50%;
+  }
+}
 .content .content__paragraaf {
   padding-left: 30px;
   padding-right: 30px;
 }
-.content .content__paragraaf .content__paragraaf__title {
+.content .content__paragraaf .content__paragraaf__title,
+.content .content__paragraaf h4,
+.content .content__paragraaf h3,
+.content .content__paragraaf h2 {
   font-family: 'Crete Round', serif;
-  font-size: 23.5px;
+  font-size: 21.66666667px;
   font-weight: bold;
+  line-height: 16.85185185px;
   margin-bottom: 3px;
   padding-bottom: 0px;
 }
+.content .content__paragraaf h3 {
+  font-size: 15.16666667px;
+  line-height: 18.77777778px;
+}
+.content .content__paragraaf h4 {
+  font-size: 11.55555556px;
+  line-height: 11.55555556px;
+}
 .content .content__paragraaf .content__paragraaf__description--bold,
+.content .content__paragraaf p,
+.content .content__paragraaf address,
+.content .content__paragraaf ul,
+.content .content__paragraaf ol,
 .content .content__paragraaf .content__paragraaf__description--normal {
   font-family: 'Open Sans', sans-serif;
   font-size: 13.5px;
@@ -12367,6 +12399,54 @@ button.close {
 }
 .content .content__paragraaf .content__paragraaf__description--bold {
   font-weight: bold;
+}
+.content .content__paragraaf p strong,
+.content .content__paragraaf caption strong,
+.content .content__paragraaf td strong,
+.content .content__paragraaf th strong {
+  font-weight: bold;
+}
+.content .content__paragraaf p mark,
+.content .content__paragraaf caption mark,
+.content .content__paragraaf td mark,
+.content .content__paragraaf th mark {
+  background-color: #ededed;
+}
+.content .content__paragraaf p.quote,
+.content .content__paragraaf caption.quote,
+.content .content__paragraaf td.quote,
+.content .content__paragraaf th.quote {
+  border: none;
+  font-family: 'Crete Round', serif;
+  font-size: 23.5px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 31.5px;
+  padding-bottom: 8px;
+  padding-top: 22.5px;
+}
+.content .content__paragraaf p a,
+.content .content__paragraaf caption a,
+.content .content__paragraaf td a,
+.content .content__paragraaf th a {
+  text-decoration: underline;
+}
+.content .content__paragraaf td,
+.content .content__paragraaf caption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13.5px;
+}
+.content .content__paragraaf address {
+  margin-bottom: 0px;
+  padding-top: 0px;
+}
+.content .content__paragraaf address strong {
+  font-weight: bold;
+}
+.content .content__paragraaf figure embed {
+  height: 206px;
+  width: 100% !important;
 }
 .extra-content {
   padding-top: 25px;

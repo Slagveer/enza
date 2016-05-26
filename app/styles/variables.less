@@ -21,14 +21,14 @@
 @black: #000;
 @percentage: .50;
 
-@H1: @percentage * 90pt;
-@H1-line-height: @percentage * 90pt;
-@H2: @percentage * 60pt;
-@H2-line-height: @percentage * 70pt;
-@H3: @percentage * 42pt;
-@H3-line-height: @percentage * 52pt;
-@H4: @percentage * 32pt;
-@H4-line-height: @percentage * 42pt;
+@H1: 65px * @retina-factor;
+@H1-line-height: @H1;
+@H2: @H1 * 60/90;
+@H2-line-height: @H2 * 70/90;
+@H3: @H1* 42/90;
+@H3-line-height: @H1-line-height * 52/90;
+@H4: @H1* 32/90;
+@H4-line-height: @H1-line-height * 42/90;
 @H5: @percentage * 32pt;
 @H5-line-height: @percentage * 42pt;
 @H6: @percentage * 32pt;
