@@ -59,8 +59,7 @@
                     }
                     return false;
                   });
-                  $teaserboxTemplate = $('#teaserbox-template-' + teaserbox.TemplateName.toLowerCase());
-                  $teaserboxTemplate.replace('Vitalis',''); // Quick fix for BE
+                  $teaserboxTemplate = $('#teaserbox-template-' + teaserbox.TemplateName.toLowerCase().replace('Vitalis',''));// Quick fix for BE
                   source = $teaserboxTemplate.html(),
                   template = Handlebars.compile(source),
                   html = template(teaserbox);
