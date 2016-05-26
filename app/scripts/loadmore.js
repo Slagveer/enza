@@ -59,11 +59,13 @@
                     }
                     return false;
                   });
-                  $teaserboxTemplate = $('#teaserbox-template-' + teaserbox.TemplateName.toLowerCase().replace('Vitalis',''));// Quick fix for BE
+                  $teaserboxTemplate = $('#teaserbox-template-' + teaserbox.TemplateName.toLowerCase().replace('vitalis',''));// Quick fix for BE
                   source = $teaserboxTemplate.html(),
                   template = Handlebars.compile(source),
                   html = template(teaserbox);
                   $teaserboxLocation.append(html);
+                  // Reactivate imagefill
+                  $('.js-teaserbox__image').imagefill();
                 });
               }
               $arrow.removeClass('loadmore');
