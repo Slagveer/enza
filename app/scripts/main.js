@@ -6,11 +6,31 @@
       var $carousel = $('.js-carousel'),
         $loadmore = $('.js-loadmore'),
         $targetAudienceForm = $('.js-submitform'),
-        $filter = $('.js-filter');
+        $filter = $('.js-filter'),
+        $contentImages = $('.js-content__image--extra-small'),
+        $contentParagraaf = $('.js-content__paragraaf'),
+        $containerContentParagraaf = $('.js-content__paragraaf'),
+        resizeTimer;
 
       $('body').navigation({
         animation: true,
         pause: 'hover'
+      });
+      $(window).resize(function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(resizeIt, 100);
+
+        function doSomething() {
+          var w = $($contentParagraaf).css('width'),
+              m = $($contentParagraaf).css('margin-left');
+
+          if (Modernizr.mq('(min-width: 769px) and (max-width: 1199px)')) {
+            // $($contentImages).css('width', $($containerContentParagraaf).css('width'));
+            // $($contentImages).css('margin-left', -1 * $($containerContentParagraaf).offset().left);
+            console.log($($contentParagraaf).offset().left);
+            console.info($($containerContentParagraaf).css('width'));
+          }
+        }
       });
       if($carousel) {
         $carousel.carousel({
@@ -43,10 +63,6 @@
           maxCheckboxes: 5
         });
       }
-      // $('.hirsc').hisrc({
-      //   useTransparentGif: false,
-      //   speedTestUri: '../bower_components/hisrc/50K.jpg'
-      // });
       $('.js-maps').googlemaps();
       $('.js-teaserbox__image').imagefill();
       $('.js-item__image').imagefill();
