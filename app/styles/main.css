@@ -6732,6 +6732,18 @@ button.close {
   .navigation + .container-fluid:first-of-type {
     padding-top: 0px !important;
   }
+  .navigation .modal-menu-background {
+    width: 321px;
+    height: 100%;
+    display: block;
+    position: fixed;
+    background: #fff;
+    bottom: 0px;
+    top: 0px;
+    z-index: 1;
+    left: 0px;
+    margin-top: 72px;
+  }
   .navigation .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
@@ -6803,7 +6815,7 @@ button.close {
     float: none!important;
     margin-top: 3.75px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   .navigation .navbar-nav > li {
     float: none;
@@ -7958,12 +7970,13 @@ button.close {
     height: 41px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow {
-    right: 8px;
+    right: -5px;
     top: 5px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
     line-height: 37px;
     padding: 0px;
+    padding-left: 33px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .flag {
     left: 36px;
@@ -7973,7 +7986,7 @@ button.close {
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow {
     height: 24px;
     right: -5px;
-    top: 8px;
+    top: 6px;
     width: 24px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--logo {
@@ -8077,7 +8090,7 @@ button.close {
   }
   .navigation .container-fluid .navbar-header {
     position: absolute;
-    right: 0px;
+    right: 1px;
   }
   .navigation .container-fluid .navbar-header .navigation__button.navbar-brand {
     opacity: 1 !important;
@@ -8086,7 +8099,7 @@ button.close {
     border: none;
     max-width: 120px;
     top: 39px;
-    right: 18px;
+    right: 17px;
     width: 120px;
   }
   .navigation {
@@ -10855,14 +10868,12 @@ button.close {
     z-index: 1;
   }
 }
-.navigation {
+.navigation.footer {
   border-radius: 0;
   border-width: 0;
   font-family: 'Crete Round', serif;
   font-size: 16px;
   line-height: 19pt;
-}
-.navigation.footer {
   position: static;
 }
 .navigation.footer .container .row .fullsize {
