@@ -119,6 +119,7 @@
   clear: left;
   *[href] {
     color: @white;
+    font-weight: bold;
     text-decoration: none;
     &:hover {
       color: @green;
@@ -187,7 +188,7 @@
       }
       .footer__menu__item__label {
         background-color: @footer-backgroundcolor;
-        border-bottom: 1px solid @grey;
+        border-bottom: 1px solid @dark-grey;
         color: @white;
         padding: 38px * @retina-factor 0px 38px * @retina-factor 60px * @retina-factor;
         .info {
@@ -254,24 +255,29 @@
               clear: left;
               color: @dark-grey;
               float: left;
+              font-weight: bold;
             }
             .country {
               margin-bottom: 28px * @retina-factor;
             }
             .phone {
+              position: relative;
+              top: -2px;
               .footer-icon();
             }
             .mail {
+              position: relative;
+              top: -2px;
               .footer-icon();
             }
             * {
               clear: both;
               display: inline-block;
               .icon {
-                bottom: -12px * @retina-factor;
+                bottom: -22px * @retina-factor;
                 display: inline-block;
                 position: relative;
-                width: 25px * @retina-factor;
+                width: 36px * @retina-factor;
               }
             }
           }
@@ -300,7 +306,7 @@
     .logo {
       border: 1px solid #fff;
       margin-left: 40px * @retina-factor;
-      max-width: 306px * @retina-factor;
+      width: 180px * @retina-factor;
     }
     .copyright {
       color: @dark-grey;

@@ -6887,6 +6887,7 @@ button.close {
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label {
   color: #515151;
+  font-weight: bold;
   padding: 19px 0px 19px 23.5px;
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label .menu {
@@ -6991,6 +6992,9 @@ button.close {
   display: inline-block;
   width: 100%;
 }
+.navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
+  font-weight: bold;
+}
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover {
   color: #aac426;
 }
@@ -7002,6 +7006,7 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
   display: inline-block;
   float: left;
+  font-weight: bold;
   white-space: nowrap;
   width: 50%;
 }
@@ -7928,6 +7933,7 @@ button.close {
     height: 41px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
+    font-weight: bold;
     height: 41px;
     text-align: left;
     padding-left: 53px;
@@ -8064,7 +8070,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .navigation__menu__item__label {
     height: 70px;
-    padding: 20px 40px 0 40px;
+    padding: 10px 40px 0 40px;
   }
   .navigation .container-fluid .navigation__menu .modal-backdrop {
     display: none;
@@ -8244,6 +8250,9 @@ button.close {
     display: inline-block;
     width: 100%;
   }
+  .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
+    font-weight: bold;
+  }
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label:hover {
     color: #aac426;
   }
@@ -8255,6 +8264,7 @@ button.close {
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
     display: inline-block;
     float: left;
+    font-weight: bold;
     white-space: nowrap;
     width: 50%;
   }
@@ -9144,6 +9154,7 @@ button.close {
 }
 .teaserbox {
   background-color: #fff;
+  border: 1px solid #ededed;
   color: #aac426;
   display: block;
   height: 250px;
@@ -9190,7 +9201,6 @@ button.close {
 }
 .teaserbox.teaserbox--icon {
   background-color: #fff;
-  margin-left: 8.5px;
   margin-right: -7.5px;
 }
 .teaserbox.teaserbox--icon .teaserbox__description {
@@ -9305,6 +9315,7 @@ button.close {
   margin-bottom: 13.5px;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__overlay {
+  display: none;
   z-index: 3;
 }
 .teaserbox.teaserbox--extra-content .teaserbox__overlay-bottom {
@@ -9524,6 +9535,10 @@ button.close {
   fill: #ffffff;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .itemslist {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .itemslist .article--list .itemslist__item .itemslist__item__content {
     width: 100%;
   }
@@ -9785,6 +9800,7 @@ button.close {
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title {
   clear: left;
   margin-left: 0px;
+  width: 40%;
 }
 .varietylist .varietylist__item .varietylist__item__bottom {
   display: flex;
@@ -10275,6 +10291,7 @@ button.close {
   line-height: 36px;
   padding-left: 20px;
   padding-top: 6.5px;
+  width: 70%;
 }
 .content .content__header .content__header__sub-title {
   font-size: 12px;
@@ -10874,7 +10891,7 @@ button.close {
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label {
   background-color: #222222;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #515151;
   color: #ffffff;
   padding: 19px 0px 19px 30px;
 }
@@ -10953,6 +10970,7 @@ button.close {
   clear: left;
   color: #515151;
   float: left;
+  font-weight: bold;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country {
@@ -10960,6 +10978,8 @@ button.close {
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone {
+  position: relative;
+  top: -2px;
   clear: left;
   float: left;
   margin-bottom: 30px;
@@ -10967,6 +10987,7 @@ button.close {
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone *[href],
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone *[href] {
   color: #ffffff;
+  font-weight: bold;
   text-decoration: none;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .phone *[href]:hover,
@@ -10990,6 +11011,8 @@ button.close {
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+  position: relative;
+  top: -2px;
   clear: left;
   float: left;
   margin-bottom: 30px;
@@ -10997,6 +11020,7 @@ button.close {
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail *[href],
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail *[href] {
   color: #ffffff;
+  font-weight: bold;
   text-decoration: none;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .mail *[href]:hover,
@@ -11025,10 +11049,10 @@ button.close {
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info * .icon,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info * .icon {
-  bottom: -6px;
+  bottom: -11px;
   display: inline-block;
   position: relative;
-  width: 12.5px;
+  width: 18px;
 }
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact:hover,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social:hover {
@@ -11054,7 +11078,7 @@ button.close {
 .navigation .footer__sub-menu .logo {
   border: 1px solid #fff;
   margin-left: 20px;
-  max-width: 153px;
+  width: 90px;
 }
 .navigation .footer__sub-menu .copyright {
   color: #515151;
@@ -11298,7 +11322,7 @@ button.close {
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow {
   float: right;
   display: inline-block;
-  line-height: 45.5px;
+  line-height: 41.5px;
   padding-right: 13px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow svg {
@@ -11405,6 +11429,7 @@ button.close {
   float: left;
   display: inline-block;
   line-height: 33.5px;
+  margin-top: -3px;
   padding-left: 50px;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow {
