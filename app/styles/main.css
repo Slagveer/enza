@@ -9343,6 +9343,7 @@ button.close {
 }
 .teaserbox.teaserbox--extra-content .teaserbox__link {
   bottom: 10px;
+  display: none;
   right: 10px;
 }
 .teaserbox.teaserbox--variety-detail {
@@ -11089,10 +11090,6 @@ button.close {
 @media (min-width: 768px) and (max-width: 1199px) {
   .item__image__text {
     display: block !important;
-  }
-  .container.container__carousel {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
   }
   .container .carousel.carousel--detail .carousel-control {
     display: block !important;
