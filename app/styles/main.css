@@ -8114,7 +8114,7 @@ button.close {
   }
   .navigation + .container:first-of-type,
   .navigation + .container-fluid:first-of-type {
-    padding-top: 100px;
+    padding-top: 101px;
   }
   .navigation .modal-backdrop {
     margin-left: 640px;
@@ -10098,10 +10098,18 @@ button.close {
   font-size: 13px;
   font-weight: bold;
 }
+.variety-detail .variety-detail__information .variety-detail__information__image .mail a {
+  color: #aac426;
+  text-decoration: none;
+}
 .variety-detail .variety-detail__information .variety-detail__information__image .phone {
   color: #aac426;
   font-size: 13px;
   font-weight: bold;
+}
+.variety-detail .variety-detail__information .variety-detail__information__image .phone a {
+  color: #aac426;
+  text-decoration: none;
 }
 .variety-detail .variety-detail__social {
   border-bottom: 1px solid #ededed;
@@ -10258,15 +10266,24 @@ button.close {
   .container.content .row:nth-child(2) .content__paragraaf {
     padding-right: 15px !important;
   }
+  .container.content .row:nth-child(2) .content__paragraaf:nth-of-type(2) {
+    padding-left: 70px;
+    top: -60px;
+  }
   .container.content .row:nth-child(2) .content__paragraaf .content__paragraaf__title:first-of-type {
     background-color: white;
+    height: 95px;
     margin-bottom: -71px;
-    margin-left: -50px;
+    margin-left: -23px;
     margin-right: -20px;
     padding-left: 130px;
     padding-top: 50px;
     position: relative;
-    top: -100px;
+    top: -150px;
+  }
+  .container.content .row:nth-child(2) .content__paragraaf h2:first-of-type {
+    position: absolute;
+    top: -65px;
   }
 }
 @media (min-width: 1200px) {
@@ -10279,18 +10296,24 @@ button.close {
   .container.content .row:nth-child(2) .content__paragraaf {
     padding-right: 15px !important;
   }
+  .container.content .row:nth-child(2) .content__paragraaf:nth-of-type(2) {
+    padding-left: 70px;
+    top: -60px;
+  }
   .container.content .row:nth-child(2) .content__paragraaf .content__paragraaf__title:first-of-type {
     background-color: white;
+    height: 95px;
     margin-bottom: -71px;
-    margin-left: -50px;
-    margin-right: -1px;
-    padding-left: 50px;
+    margin-left: -23px;
+    margin-right: -20px;
+    padding-left: 130px;
     padding-top: 50px;
     position: relative;
-    top: -100px;
+    top: -150px;
   }
-  .container.content .row:nth-child(2) .content__paragraaf + .content__paragraaf {
-    margin-top: -25px;
+  .container.content .row:nth-child(2) .content__paragraaf h2:first-of-type {
+    position: absolute;
+    top: -65px;
   }
 }
 .content .content__header {
@@ -12378,7 +12401,7 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 900px) {
   p.quote {
-    left: -250px !important;
+    left: -225px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -12390,7 +12413,7 @@ button.close {
   }
   .content__paragraaf .content__image--extra-small {
     margin-left: -415px;
-    min-width: 185%;
+    min-width: 215%;
   }
 }
 @media (min-width: 1200px) {
