@@ -27,8 +27,8 @@
           if (Modernizr.mq('(min-width: 769px) and (max-width: 1199px)')) {
             // $($contentImages).css('width', $($containerContentParagraaf).css('width'));
             // $($contentImages).css('margin-left', -1 * $($containerContentParagraaf).offset().left);
-            console.log($($contentParagraaf).offset().left);
-            console.info($($containerContentParagraaf).css('width'));
+            // console.log($($contentParagraaf).offset().left);
+            // console.info($($containerContentParagraaf).css('width'));
           }
         }
       });
