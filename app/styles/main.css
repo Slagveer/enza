@@ -9762,6 +9762,9 @@ button.close {
   text-decoration: none;
   background-color: #e6e6e6;
 }
+.varietylist .varietylist__item.no-hover:hover {
+  background-color: #fff;
+}
 .varietylist .varietylist__item .varietylist__item__top {
   display: flex;
   flex-flow: row nowrap;
@@ -10380,6 +10383,8 @@ button.close {
 }
 .content .content__image--extra-small {
   height: 141px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   padding: 9px 0 35.5px 0;
   width: 100%;
 }
@@ -12420,7 +12425,7 @@ button.close {
     left: -300px;
     position: absolute;
     top: 0px;
-    width: 50%;
+    width: 40%;
   }
   .content__paragraaf .content__image--extra-small {
     margin-left: -415px;
@@ -12697,7 +12702,7 @@ button.close {
 }
 .googlemaps-map .googlemaps-map__icon {
   float: left;
-  max-width: 36px;
+  max-width: 22px;
 }
 .googlemaps-map .googlemaps-map__icon:nth-of-type(2) {
   margin-left: 10px;

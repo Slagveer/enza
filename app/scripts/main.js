@@ -18,7 +18,7 @@
       });
       $(window).resize(function() {
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(resizeIt, 100);
+        resizeTimer = setTimeout(doSomething, 100);
 
         function doSomething() {
           var w = $($contentParagraaf).css('width'),

@@ -104,13 +104,14 @@
     map.mapTypes.set('enza', enzaMapType);
     map.setMapTypeId('enza');
     forklift = {
-      url: '/images/forklifttruck.png',
-      size: new google.maps.Size(40, 64),
+      //url: '/images/forklifttruck.png',
+      url: '/images/icon-map-marker-distributors.svg',
+      size: new google.maps.Size(60, 74),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
     }
     building = {
-      url: '/images/officebuilding.png',
+      url: '/images/icon-map-marker-office.svg',
       size: new google.maps.Size(40, 64),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
