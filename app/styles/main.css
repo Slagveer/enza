@@ -12298,6 +12298,13 @@ button.close {
     text-align: left;
     padding-bottom: 0px !important;
   }
+  .person-contact .person-contact__information .name a,
+  .person-contact .person-contact__information .job a,
+  .person-contact .person-contact__information .mail a,
+  .person-contact .person-contact__information .phone a {
+    color: #aac426;
+    text-decoration: none;
+  }
   .person-contact .person-contact__information .name {
     padding-top: 8px !important;
     padding-bottom: 0px !important;
@@ -12305,6 +12312,10 @@ button.close {
   }
   .person-contact .person-contact__information .mail {
     margin-bottom: 0px !important;
+  }
+  .person-contact .person-contact__information .mail a {
+    color: #aac426;
+    text-decoration: none;
   }
 }
 .person-contact .person-contact__information {
