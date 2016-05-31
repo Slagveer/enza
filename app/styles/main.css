@@ -6730,7 +6730,7 @@ button.close {
 @media (min-width: 768px) and (max-width: 1199px) {
   .navigation + .container:first-of-type,
   .navigation + .container-fluid:first-of-type {
-    padding-top: 0px !important;
+    padding-top: 50px !important;
   }
   .navigation .modal-menu-background {
     width: 321px;
@@ -6843,9 +6843,6 @@ button.close {
   }
   .navigation .collapse.in {
     display: block !important;
-  }
-  .navigation.navbar {
-    position: static;
   }
   .navigation.navbar .dropdown-menu {
     position: static;
@@ -8197,12 +8194,12 @@ button.close {
     font-size: 32px;
     line-height: 19pt;
     margin-bottom: 0px;
-    position: fixed;
+    position: relative;
     width: 100%;
   }
   .navigation + .container:first-of-type,
   .navigation + .container-fluid:first-of-type {
-    padding-top: 101px;
+    padding-top: 1px;
   }
   .navigation .modal-backdrop {
     margin-left: 640px;
