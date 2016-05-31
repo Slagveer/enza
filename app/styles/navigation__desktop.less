@@ -139,6 +139,41 @@
                 height: 60px !important;
                 .navigation__menu__item__label {
                   height: 60px !important;
+                  &:hover,
+                  &:active,
+                  &:focus {
+                    background-color: @white !important;
+                    color: @green;
+                  }
+                }
+                .navigation__menu__item__sub {
+                  text-align: center;
+                  width: 100%;
+                  box-shadow: none;
+                  .navigation__menu__item__sub__item {
+                    border: 1px solid @light-grey;
+                    cursor: pointer;
+                    display: table-row;
+                    font-size: 13pt;
+                    height: 60px;
+                    line-height: 12pt;
+                    vertical-align: middle;
+                    width: 100%;
+                    &:hover {
+                      color: @green;
+                    }
+                    &:last-child {
+                      .menu-label {
+                        border-bottom: 1px solid @grey;
+                      }
+                    }
+                    .menu-label {
+                      display: table-cell;
+                      vertical-align: middle;
+                      border: 1px solid @grey;
+                      border-bottom: 0px solid @grey;
+                    }
+                  }
                 }
               }
               .navigation__menu__item__label {

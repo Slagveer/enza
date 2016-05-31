@@ -38,8 +38,10 @@
           $checkboxes = $filterButton.data('checkboxes');
           $filterLessButton = $filterButton.data('filterlessbutton');
           $checkboxes.show();
-          $filterLessButton.toggleClass('hidden');
-          $filterButton.toggleClass('hidden');
+          //$filterLessButton.toggleClass('hidden');
+          //$filterButton.toggleClass('hidden');
+          $filterButton.hide();
+          $filterLessButton.show();
         });
         $($filterLessButton).on('click', function onClick(evt) {
           evt.preventDefault();
@@ -47,8 +49,10 @@
           $filterLessButton = $filterButton.data('filterlessbutton');
           $checkboxes.hide();
           showCheckboxes($checkboxes);
-          $filterLessButton.toggleClass('hidden');
-          $filterButton.toggleClass('hidden');
+          // $filterLessButton.toggleClass('hidden');
+          // $filterButton.toggleClass('hidden');
+          $($filterButton).show();
+          $($filterLessButton).hide();
         });
         showCheckboxes($checkboxes);
         if($checkboxes.length === 5) {
