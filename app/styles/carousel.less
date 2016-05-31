@@ -107,7 +107,8 @@
         text-align: left;
         width: 100%;
         .carousel-caption__quote {
-          padding-left: 0px;
+          margin: 0 0 0pt !important;
+          padding: 10.5pt 21pt 0 0pt !important;
           text-align: left;
           width: 40%;
         }
@@ -234,15 +235,29 @@
     .container--carousel__slides__item {
       .container--carousel__slides__item__image {
         height: 594px * @retina-factor;
+        .slide-background {
+          background-color: @dark-grey;
+          position: absolute;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          opacity: .3;
+        }
       }
       .carousel-caption {
-        bottom: 105px * @retina-factor;
+        bottom: 80px;
+        .carousel-caption__quote {
+          padding: 10.5pt 21pt 0 0pt !important;
+          margin: 0 0 0pt !important;
+        }
         .carousel-caption__text {
           font-family: @font-family-crete;
           font-size: 90px * @retina-factor;
-          position: absolute;
+          line-height: 50px;
+          position: relative;
           text-align: center;
-          top: -250px * @retina-factor;
+          top: -20px;
           width: 100%
         }
         .carousel-caption__button {
