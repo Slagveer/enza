@@ -57,7 +57,7 @@
         if($search.data('active')) {
           $navigationSearch.collapse('show');
         }
-        setLogo($(this));
+        //setLogo($(this));
       });
 
       function collapseAll() {

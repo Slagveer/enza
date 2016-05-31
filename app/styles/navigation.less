@@ -60,6 +60,22 @@
         .navigation__menu__form {
           padding-bottom: 15px * @retina-factor;
           padding-top: 15px * @retina-factor;
+          background: none;
+          border-width: 0;
+          float: right;
+          font-size: 16px;
+          line-height: @body-line-height * @retina-factor;
+          margin-top: 0px;
+          padding: 0px;
+          position: absolute;
+          right: 100px;
+          width: auto;
+          .form-control {
+            font-size: 16px;
+          }
+          .btn {
+            border-left: none;
+          }
         }
         .navigation__menu__item {
           .navigation__menu__item__label {
@@ -168,14 +184,20 @@
     .navigation__menu__form {
       background: none;
       border-width: 0;
-      //float: right;
+      float: right;
       font-size: @body * @retina-factor;
       line-height: @body-line-height * @retina-factor;
       margin-top: 0px;
-      //padding: 0px;
-      //position: relative;
-      //right: 88px;
-      width: 100%
+      padding: 0px;
+      position: relative;
+      right: 88px;
+      width: 50%;
+      .form-control {
+        font-size: 16px;
+      }
+      .btn {
+        border-left: none;
+      }
     }
     .navigation__menu__item {
       background-color: @white;
@@ -409,6 +431,30 @@
       order: 3;
       position: relative;
       width: 298px * @retina-factor;//1.5 * (@navbar-height + @navbar-margin-bottom/2);
+      &:hover {
+        svg {
+          fill: @green;
+          stroke: @green;
+          path {
+            fill: @green;
+            stroke: @green;
+          }
+        }
+      }
+      .search-glass {
+        display: none;
+      }
+      .search-cross {
+        display: block;
+      }
+      &.collapsed {
+        .search-glass {
+          display: block;
+        }
+        .search-cross {
+          display: none;
+        }
+      }
       svg {
         height: 27px * @retina-factor;
         width: 27px * @retina-factor;
@@ -420,7 +466,7 @@
       height: 103px * @retina-factor;//@navbar-height + @navbar-margin-bottom/2;
       order: 2;
       position: relative;
-      text-align: center;
+      text-align: left;
       white-space: nowrap;
       width: 100%;
     }

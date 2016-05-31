@@ -6787,6 +6787,22 @@ button.close {
   .navigation .container-fluid .navigation__menu .navigation__menu__form {
     padding-bottom: 7.5px;
     padding-top: 7.5px;
+    background: none;
+    border-width: 0;
+    float: right;
+    font-size: 16px;
+    line-height: 9.5pt;
+    margin-top: 0px;
+    padding: 0px;
+    position: absolute;
+    right: 100px;
+    width: auto;
+  }
+  .navigation .container-fluid .navigation__menu .navigation__menu__form .form-control {
+    font-size: 16px;
+  }
+  .navigation .container-fluid .navigation__menu .navigation__menu__form .btn {
+    border-left: none;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__item .navigation__menu__item__label.navigation__menu__item__label--email {
     width: 189px;
@@ -6879,10 +6895,20 @@ button.close {
 .navigation .navigation__menu .navigation__menu__form {
   background: none;
   border-width: 0;
+  float: right;
   font-size: 7.5pt;
   line-height: 9.5pt;
   margin-top: 0px;
-  width: 100%;
+  padding: 0px;
+  position: relative;
+  right: 88px;
+  width: 50%;
+}
+.navigation .navigation__menu .navigation__menu__form .form-control {
+  font-size: 16px;
+}
+.navigation .navigation__menu .navigation__menu__form .btn {
+  border-left: none;
 }
 .navigation .navigation__menu .navigation__menu__item {
   background-color: #ffffff;
@@ -7094,6 +7120,26 @@ button.close {
   position: relative;
   width: 149px;
 }
+.navigation .navigation__button.navigation__button--search:hover svg {
+  fill: #aac426;
+  stroke: #aac426;
+}
+.navigation .navigation__button.navigation__button--search:hover svg path {
+  fill: #aac426;
+  stroke: #aac426;
+}
+.navigation .navigation__button.navigation__button--search .search-glass {
+  display: none;
+}
+.navigation .navigation__button.navigation__button--search .search-cross {
+  display: block;
+}
+.navigation .navigation__button.navigation__button--search.collapsed .search-glass {
+  display: block;
+}
+.navigation .navigation__button.navigation__button--search.collapsed .search-cross {
+  display: none;
+}
 .navigation .navigation__button.navigation__button--search svg {
   height: 13.5px;
   width: 13.5px;
@@ -7104,7 +7150,7 @@ button.close {
   height: 51.5px;
   order: 2;
   position: relative;
-  text-align: center;
+  text-align: left;
   white-space: nowrap;
   width: 100%;
 }
@@ -7919,7 +7965,7 @@ button.close {
     padding: 5px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop .dropdown-menu__form {
-    width: 300px;
+    width: 301px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop .dropdown-menu__form .form-control {
     border-right: none;
@@ -8067,6 +8113,7 @@ button.close {
     width: 70%;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label.navigation__menu__item__label--phone {
+    height: 42px;
     padding-left: 60px;
     text-align: left;
     width: 30%;
@@ -8112,7 +8159,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child .menu {
     right: 17px;
-    top: 25px;
+    top: 17px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child .menu svg {
     width: 20px;
@@ -8195,6 +8242,7 @@ button.close {
   }
   .navigation .navigation__menu .navigation__menu__item .dropdown-menu .form-control {
     font-size: 16px;
+    height: 42px;
   }
   .navigation .navigation__menu .navigation__menu__item.start {
     margin-top: -6px;
