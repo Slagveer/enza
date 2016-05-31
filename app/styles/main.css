@@ -6844,7 +6844,7 @@ button.close {
   border-width: 0;
   font-family: 'Crete Round', serif;
   font-size: 16px;
-  line-height: 9.5pt;
+  line-height: 8.5pt;
   margin-bottom: 0px;
   position: fixed;
   width: 100%;
@@ -6943,7 +6943,7 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo.open .navigation__menu__item__label .arrow,
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact.open .navigation__menu__item__label .arrow {
   right: 20px;
-  top: 12.5px;
+  top: 18.5px;
   transform: rotate(90deg);
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label,
@@ -6984,7 +6984,7 @@ button.close {
   background-repeat: no-repeat;
   position: absolute;
   right: 20px;
-  top: 12.5px;
+  top: 18.5px;
   transform: rotate(0deg);
 }
 .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label .arrow svg .circle,
@@ -7110,7 +7110,7 @@ button.close {
   background: url(../images/flags.png) no-repeat;
   background-position: -176px -44px;
   display: inline-block;
-  height: 11px;
+  height: 8px;
   width: 16px;
 }
 .navigation .flag.flag-ad {
@@ -8007,6 +8007,7 @@ button.close {
     font-size: 12px;
     height: 41px;
     padding: 0px;
+    top: -1px;
     width: 623px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item {
@@ -11374,6 +11375,7 @@ button.close {
   flex-direction: row;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item {
+  cursor: pointer;
   flex-grow: 1;
   max-width: 33.33333333%;
   position: relative;
@@ -11382,18 +11384,18 @@ button.close {
   opacity: 0;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
-  position: absolute;
   background-color: #515151;
   height: 102%;
-  width: 100%;
   opacity: 0.8;
+  position: absolute;
+  width: 101%;
   z-index: 1;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image {
   border: none;
   bottom: -1px;
   height: 57px;
-  width: 100%;
+  width: 101%;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__image__text {
   color: #ffffff;
