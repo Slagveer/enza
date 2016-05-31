@@ -6877,11 +6877,12 @@ button.close {
   margin-top: 0px;
 }
 .navigation .navigation__menu .navigation__menu__form {
-  background-color: #ededed;
+  background: none;
   border-width: 0;
   font-size: 7.5pt;
   line-height: 9.5pt;
   margin-top: 0px;
+  width: 100%;
 }
 .navigation .navigation__menu .navigation__menu__item {
   background-color: #ffffff;
@@ -8039,7 +8040,8 @@ button.close {
     vertical-align: middle;
     width: 100%;
   }
-  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:hover {
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:hover .menu-label {
+    background-color: transparent;
     color: #aac426;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:last-child .menu-label {
@@ -8050,6 +8052,8 @@ button.close {
     vertical-align: middle;
     border: 1px solid #cccccc;
     border-bottom: 0px solid #cccccc;
+    padding: 0px !important;
+    white-space: normal !important;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
     border: none;
