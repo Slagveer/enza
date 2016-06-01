@@ -8075,6 +8075,10 @@ button.close {
     width: 100%;
     box-shadow: none;
   }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item--table {
+    display: table;
+    width: 100%;
+  }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item {
     border: 1px solid #ededed;
     cursor: pointer;
@@ -9636,25 +9640,63 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .itemslist {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 95px;
+  }
+  .itemslist .article--list .itemslist__item {
+    padding: 0px;
+    height: 173px;
+    margin-top: 24px;
+  }
+  .itemslist .article--list .itemslist__item .itemslist__item__image {
+    height: 173px;
+    margin-left: 0px;
+    max-width: 173px;
+    position: absolute !important;
+    width: 173px;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__content {
+    padding-left: 254px;
+    padding-top: 29px;
     width: 100%;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__content .itemslist__item__description.block-with-text {
+    font-size: 21px;
+    height: auto;
+    line-height: 22px;
     max-width: 80%;
+    padding-top: 10px;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__link {
     right: 30px;
   }
 }
 @media (min-width: 1200px) {
+  .itemslist {
+    padding-left: 95px;
+  }
+  .itemslist .article--list .itemslist__item {
+    padding: 0px;
+    height: 173px;
+    margin-top: 24px;
+  }
+  .itemslist .article--list .itemslist__item .itemslist__item__image {
+    height: 173px;
+    margin-left: 0px;
+    max-width: 173px;
+    position: absolute !important;
+    width: 173px;
+  }
   .itemslist .article--list .itemslist__item .itemslist__item__content {
+    padding-left: 254px;
+    padding-top: 29px;
     width: 100%;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__content .itemslist__item__description.block-with-text {
+    font-size: 21px;
+    height: auto;
+    line-height: 22px;
     max-width: 80%;
+    padding-top: 10px;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__link {
     right: 30px;
@@ -9698,6 +9740,7 @@ button.close {
   height: 86.5px;
   max-width: 88.5px;
   margin-left: 9px;
+  position: relative;
   width: 100%;
 }
 .itemslist .itemslist__item .itemslist__item__content {

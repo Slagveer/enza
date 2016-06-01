@@ -6,15 +6,31 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .itemslist {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 95px;
+    //padding-right: 60px;
     .article--list {
       .itemslist__item {
+        padding: 0px;
+        height: 173px;
+        margin-top: 24px;
+        .itemslist__item__image {
+          height: 173px;
+          margin-left: 0px;
+          max-width: 173px;
+          position: absolute !important;
+          width: 173px;
+        }
         .itemslist__item__content {
+          padding-left: 254px;
+          padding-top: 29px;
           width: 100%;
           .itemslist__item__description {
             &.block-with-text {
+              font-size: 21px;
+              height: auto;
+              line-height: 22px;
               max-width: 80%;
+              padding-top: 10px;
             }
           }
         }
@@ -30,13 +46,30 @@
 // DESKTOP::START
 @media (min-width: @desktop_min) {
   .itemslist {
+    padding-left: 95px;
     .article--list {
       .itemslist__item {
+        padding: 0px;
+        height: 173px;
+        margin-top: 24px;
+        .itemslist__item__image {
+          height: 173px;
+          margin-left: 0px;
+          max-width: 173px;
+          position: absolute !important;
+          width: 173px;
+        }
         .itemslist__item__content {
+          padding-left: 254px;
+          padding-top: 29px;
           width: 100%;
           .itemslist__item__description {
             &.block-with-text {
+              font-size: 21px;
+              height: auto;
+              line-height: 22px;
               max-width: 80%;
+              padding-top: 10px;
             }
           }
         }
@@ -95,6 +128,7 @@
       height: 173px * @retina-factor;
       max-width: 177px * @retina-factor;
       margin-left: 18px * @retina-factor;
+      position: relative;
       width: 100%;
     }
     .itemslist__item__content {
