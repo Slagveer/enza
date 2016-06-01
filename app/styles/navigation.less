@@ -201,6 +201,11 @@
     }
     .navigation__menu__item {
       background-color: @white;
+      &:hover {
+        ul.dropdown-menu.navigation__menu__item__sub {
+          display: block !important;
+        }
+      }
       .dropdown-menu {
         padding: 0px;
         .navigation__menu__item {

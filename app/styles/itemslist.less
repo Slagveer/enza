@@ -85,6 +85,13 @@
 // MOBILE::START
 .itemslist {
   &.container {
+    .col-xs-12 {
+      &:first-child {
+        .itemslist__item {
+          margin-top: 0px;
+        }
+      }
+    }
     .fullsize {
       .article--list {
         padding-left: 4px;
@@ -120,7 +127,7 @@
       background-color: @light-grey;
     }
     &.first {
-      margin-top: 0px;
+
     }
     .itemslist__item__image {
       border: 1px solid @grey;

@@ -6910,6 +6910,9 @@ button.close {
 .navigation .navigation__menu .navigation__menu__item {
   background-color: #ffffff;
 }
+.navigation .navigation__menu .navigation__menu__item:hover ul.dropdown-menu.navigation__menu__item__sub {
+  display: block !important;
+}
 .navigation .navigation__menu .navigation__menu__item .dropdown-menu {
   padding: 0px;
 }
@@ -8079,8 +8082,12 @@ button.close {
     display: table;
     width: 100%;
   }
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item--table:first-child .menu-label {
+    border-top: 1px solid #ededed;
+  }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item {
-    border: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
     cursor: pointer;
     display: table-row;
     font-size: 13pt;
@@ -8089,18 +8096,19 @@ button.close {
     vertical-align: middle;
     width: 100%;
   }
-  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:hover .menu-label {
-    background-color: transparent;
+  .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:hover {
+    background-color: #ffffff !important;
     color: #aac426;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item:last-child .menu-label {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ededed;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--contact ~ .navigation__menu__item .navigation__menu__item__sub .navigation__menu__item__sub__item .menu-label {
     display: table-cell;
     vertical-align: middle;
-    border: 1px solid #cccccc;
-    border-bottom: 0px solid #cccccc;
+    border-bottom: 0px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-right: 1px solid #ededed;
     padding: 0px !important;
     white-space: normal !important;
   }
@@ -9703,6 +9711,9 @@ button.close {
     right: 30px;
   }
 }
+.itemslist.container .col-xs-12:first-child .itemslist__item {
+  margin-top: 0px;
+}
 .itemslist.container .fullsize .article--list {
   padding-left: 4px;
   padding-right: 4px;
@@ -9731,9 +9742,6 @@ button.close {
 }
 .itemslist .itemslist__item:hover {
   background-color: #ededed;
-}
-.itemslist .itemslist__item.first {
-  margin-top: 0px;
 }
 .itemslist .itemslist__item .itemslist__item__image {
   border: 1px solid #cccccc;
@@ -10942,7 +10950,8 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .navigation.footer {
-    padding-top: 25px !important;
+    background-color: #222222;
+    margin-top: 25px !important;
   }
   .navigation.footer .container-fluid .row .fullsize,
   .navigation.footer .container .row .fullsize {
@@ -10985,8 +10994,8 @@ button.close {
 }
 @media (min-width: 1200px) {
   .navigation.footer {
-    background: none !important;
-    padding-top: 35px !important;
+    background: #222222 !important;
+    margin-top: 35px !important;
   }
   .navigation.footer .container-fluid .row .fullsize,
   .navigation.footer .container .row .fullsize {
@@ -11033,6 +11042,7 @@ button.close {
   .navigation.footer .container .row .fullsize .footer__sub-menu {
     display: block;
     z-index: 1;
+    right: 0px;
   }
 }
 .navigation.footer {
@@ -11042,7 +11052,6 @@ button.close {
   font-family: 'Crete Round', serif;
   font-size: 16px;
   line-height: 19pt;
-  padding-top: 25px;
   position: static;
 }
 .navigation.footer .container .row .fullsize {
@@ -11249,7 +11258,7 @@ button.close {
   height: 100%;
   position: absolute;
   padding: 30px 15px 0px 0px;
-  right: 0px;
+  right: 16px;
   text-align: center;
   top: 0px;
   width: 122px;

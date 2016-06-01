@@ -2,7 +2,8 @@
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .navigation {
     &.footer {
-      padding-top: 25px !important;
+      background-color: @navigation-backgroundcolor;
+      margin-top: 25px !important;
       .container-fluid,
       .container {
         .row {
@@ -50,8 +51,8 @@
 @media (min-width: @desktop_min) {
   .navigation {
     &.footer {
-      background: none !important;
-      padding-top: 35px !important;
+      background: @navigation-backgroundcolor !important;
+      margin-top: 35px !important;
       .container-fluid,
       .container {
         .row {
@@ -92,6 +93,7 @@
             .footer__sub-menu {
               display: block;
               z-index: 1;
+              right: 0px;
             }
           }
         }
@@ -153,7 +155,7 @@
     font-family: @font-family-crete;
     font-size: 32px * @retina-factor;//@body;
     line-height: @body-line-height;
-    padding-top: 25px;
+    //padding-top: 25px;
     position: static;
     .container {
       .row {
@@ -307,7 +309,7 @@
     height: 100%;
     position: absolute;
     padding: 60px * @retina-factor 30px * @retina-factor 0px 0px;
-    right: 0px;
+    right: 16px;
     text-align: center;
     top: 0px;
     width: 244px * @retina-factor;
