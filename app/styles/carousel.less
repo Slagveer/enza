@@ -316,7 +316,7 @@
     .container--carousel__thumbnails__item {
       cursor: pointer;
       flex-grow: 1;
-      max-width: 100/3%;
+      //max-width: 100/3%;
       position: relative;
       &.active {
         .item__overlay {
@@ -325,17 +325,18 @@
       }
       .item__overlay {
         background-color: @dark-grey;
-        height: 102%;
+        height: 57px;
+        left: 0px;
+        right: 0px;
         opacity: 0.8;
         position: absolute;
-        width: 101%;
         z-index: 1;
       }
       .item__image {
         border: none;
-        bottom: -1px;
+        bottom: 0px;
         height: 114px * @retina-factor;
-        width: 101%;
+        width: 100%;
       }
       .item__image__text {
         color: @white;

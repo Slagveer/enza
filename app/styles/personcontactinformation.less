@@ -6,7 +6,7 @@
     border-top: 1px solid @light-grey;
     .person-contact__information {
       border-bottom: 0px solid @light-grey !important;
-      //border-top: 1px solid @light-grey;
+      border-left: 1px solid @light-grey;
       padding-left: 144px * @retina-factor;
       padding-top: 32px * @retina-factor !important;
       padding-bottom:-30px !important;
@@ -43,7 +43,9 @@
     border-bottom: 1px solid @light-grey;
     border-top: 1px solid @light-grey;
     .person-contact__information {
-      border: none !important;
+      border-top: none !important;
+      border-bottom: none !important;
+      border-left: 1px solid @light-grey;
       padding-left: 144px * @retina-factor;
       padding-top: 32px * @retina-factor !important;
       padding-bottom:-30px !important;
@@ -106,6 +108,7 @@
       .name {
         font-size: 26px * @retina-factor;
         font-weight: bold;
+        margin-bottom: 0px;
       }
       .job {
         font-size: 26px * @retina-factor;
@@ -115,11 +118,20 @@
         color: @green;
         font-size: 26px * @retina-factor;
         font-weight: bold;
+        margin-bottom: 0px;
+        a {
+          color: @green;
+          text-decoration: none;
+        }
       }
       .phone {
         color: @green;
         font-size: 26px * @retina-factor;
         font-weight: bold;
+        a {
+          color: @green;
+          text-decoration: none;
+        }
       }
     }
   }

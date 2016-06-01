@@ -1,5 +1,31 @@
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
 .loadmore {
-  padding: 20px * @retina-factor 0;
+  padding: 35px 0 0 0 !important;
+  .carousel-caption__button {
+    max-width: 200px !important;
+    height: 53px !important;
+    .carousel-caption__button__arrow {
+      left: 45px !important;
+      top: 13px !important;
+    }
+    .carousel-caption__button__text {
+      margin-top: 3px !important;
+      padding-left: 66px !important;
+    }
+  }
+}
+}
+// DESKTOP::END
+
+.loadmore {
+  padding: 25px 0 0 0;
   text-align: center;
   .carousel-caption__button {
     background: none;

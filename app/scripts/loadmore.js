@@ -26,7 +26,7 @@
       $loadmore.on('click', function onClick(evt) {
         evt.preventDefault();
         if(!disabled) {
-          $arrow.addClass('loadmore');
+          //$arrow.addClass('loadmore');
           getTeasers($loadmore.data('amount-teaserboxes'));
         }
       });
@@ -61,17 +61,17 @@
                   });
                   $teaserboxTemplate = $('#teaserbox-template-' + teaserbox.TemplateName.toLowerCase().replace('vitalis',''));// Quick fix for BE
                   source = $teaserboxTemplate.html(),
-                  template = Handlebars.compile(source),
-                  html = template(teaserbox);
+                    template = Handlebars.compile(source),
+                    html = template(teaserbox);
                   $teaserboxLocation.append(html);
                   // Reactivate imagefill
                   $('.js-teaserbox__image').imagefill();
                 });
               }
-              $arrow.removeClass('loadmore');
+              //$arrow.removeClass('loadmore');
             }).fail(function(err) {
-              $arrow.removeClass('loadmore');
-            });
+            //$arrow.removeClass('loadmore');
+          });
         }
       }
 
