@@ -18,9 +18,9 @@
       });
       $(window).resize(function() {
         clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(doSomething, 100);
+        resizeTimer = setTimeout(resizeIt, 100);
 
-        function doSomething() {
+        function resizeIt() {
           var w = $($contentParagraaf).css('width'),
               m = $($contentParagraaf).css('margin-left');
 
