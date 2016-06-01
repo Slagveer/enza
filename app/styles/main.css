@@ -11536,11 +11536,11 @@ button.close {
   opacity: 0;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
-  background-color: #515151;
+  background-color: #000000;
   height: 57px;
   left: 0px;
   right: 0px;
-  opacity: 0.8;
+  opacity: 0.6;
   position: absolute;
   z-index: 1;
 }
@@ -11562,7 +11562,7 @@ button.close {
   z-index: 2;
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item:active .item__overlay {
-  opacity: .8;
+  opacity: .6;
 }
 .carousel-fade .carousel-inner .item {
   transition-property: opacity;
