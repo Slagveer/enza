@@ -9772,6 +9772,7 @@ button.close {
   float: left;
   font-family: 'Crete Round', serif;
   margin-top: -5.5px;
+  padding-top: 20px;
 }
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__description.block-with-text {
   display: block;
