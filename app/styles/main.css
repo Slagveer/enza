@@ -11036,6 +11036,7 @@ button.close {
   font-family: 'Crete Round', serif;
   font-size: 16px;
   line-height: 19pt;
+  padding-top: 50px;
   position: static;
 }
 .navigation.footer .container .row .fullsize {
