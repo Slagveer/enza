@@ -6748,6 +6748,7 @@ button.close {
     padding-right: 0px;
   }
   .navigation .container-fluid .navbar-header {
+    border-bottom: 1px solid #ededed;
     float: none;
   }
   .navigation .container-fluid .navbar-header.flex {
@@ -7113,6 +7114,7 @@ button.close {
 }
 .navigation .navigation__button.navigation__button--search {
   background-color: #fff;
+  border-left: 1px solid #ededed;
   color: #333;
   height: 51.5px;
   margin: 0px;
