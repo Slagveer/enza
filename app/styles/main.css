@@ -8022,7 +8022,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country.open .navigation__menu__item__label .arrow {
     right: -5px;
-    top: 5px;
+    top: 8px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label {
     line-height: 37px;
@@ -8303,7 +8303,7 @@ button.close {
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact.open .navigation__menu__item__label .arrow {
     right: 40px;
     top: 25px;
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
   }
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label,
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label,
