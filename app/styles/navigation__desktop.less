@@ -4,6 +4,7 @@
     background: url('../images/navigation.fw.png') repeat-x 0 -19px !important;
     font-size: 18px !important;
     .container-fluid {
+      border-bottom: 1px solid @light-grey;
       position: relative;
       width: @container-lg; //960px
       .navigation__menu {
@@ -53,7 +54,7 @@
                 position: relative;
                 .dropdown-menu__search {
                   position: absolute;
-                  right: 18px;
+                  right: 0px;
                   top: -60px;
                 }
               }
@@ -69,7 +70,7 @@
                     padding-right: 53px;
                     position: relative;
                     .flag {
-                      left: 30px;
+                      left: 26px;
                     }
                   }
                 }
@@ -101,7 +102,7 @@
                 padding: 0px;
                 padding-left: 33px;
                 .flag {
-                  left: 30px;
+                  left: 26px;
                   position: absolute;
                   top: 14px;
                 }
@@ -245,7 +246,7 @@
             &:last-child {
               display: block;
               height: 70px;
-              width: 102px;
+              width: 119px;
               .navigation__menu__item__label {
                 height: 70px;
                 padding: 0px;
@@ -291,7 +292,7 @@
               max-width: 120px;
               top: 39px;
               //right: 227px;
-              right: 17px;
+              right: 0px;
               width: 120px;
             }
           }
@@ -357,6 +358,7 @@
         .form-control {
           font-size: 16px;
           height: 42px;
+          box-shadow: none;
         }
       }
       &.start {
@@ -404,7 +406,7 @@
             .arrow {
               right: 40px;
               top: 25px;
-              transform: rotate(90deg);
+              transform: rotate(0deg);
               &:before {
                 //content: '\e114';
               }
@@ -442,7 +444,7 @@
             position: absolute;
             right: 40px;
             top: 25px;
-            transform: rotate(0deg);
+            transform: rotate(90deg);
             svg {
               .circle  {
                 visibility: hidden;

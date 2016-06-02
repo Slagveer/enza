@@ -35,7 +35,13 @@
   .searchresultlist__input {
     .searchresultlist__form {
       .form-control {
+        border-right: none;
+        box-shadow: none;
+        font-family: @font-family-crete;
         font-size: inherit;
+      }
+      .btn {
+        border-left: none;
       }
       border-width: 0;
       font-size: 27px * @retina-factor;
@@ -56,6 +62,7 @@
     display: block;
     height: 172px * @retina-factor;
     margin-bottom: 30px * @retina-factor;
+    position: relative;
     text-decoration: none;
     &:hover,
     &:active {
@@ -83,11 +90,12 @@
         font-size: 24px * @retina-factor;
         padding-left: 16px * @retina-factor;
         padding-top: 10px * @retina-factor;
+        width: 90%;
       }
     }
     .searchresultlist__item__link {
       align-self: flex-end;
-      bottom: 52px * @retina-factor;
+      bottom: 10px;
       color: @green;
       display: inline-block;
       flex-shrink: 0;
@@ -95,7 +103,7 @@
       height: 48px * @retina-factor;//2 * @label;
       line-height: 1.8 * @label-line-height * @retina-factor;
       position: absolute;
-      right: 44px * @retina-factor;
+      right: 10px;
       text-align: center;
       vertical-align: middle;
       width: 48px * @retina-factor;//2 * @label;
