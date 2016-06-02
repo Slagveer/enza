@@ -21,6 +21,228 @@
 </head>
 <body>
 
+<!-- NAVIGATION::START -->
+<nav class="navigation navbar navbar-fixed-top js-navigation">
+  <!-- NAVIGATION:MENUBUTTONS::START -->
+  <div class="container-fluid">
+    <div class="navbar-header flex">
+      <a class="navbar-brand navigation__button navigation__button--logo js-logo" href="#" title="Enza Zaden">
+        <img class="navigation__button__image" src="../images/logo-enzazaden.svg" alt="Enza Zaden">
+      </a>
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--hamburger js-menu"
+              data-toggle="collapse" data-target="#menu" aria-expanded="false">
+        <span class="menu glyphicon">
+          <svg class="cross" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1024px" height="1024px" viewBox="0 0 1024 1024" enable-background="new 0 0 1024 1024" xml:space="preserve">
+            <path fill="#fff" stroke-width="14" d="M628.509 517.026l295.154 295.154c33.658 33.658 33.658 85.439 0 119.097-15.534 15.534-38.836 25.89-59.549 25.89s-44.015-10.356-59.549-25.89l-295.154-295.154-295.154 295.154c-15.534 15.534-38.836 25.89-59.549 25.89s-44.015-10.356-59.549-25.89c-33.658-33.658-33.658-85.439 0-119.097l295.154-295.154-295.154-295.154c-33.658-33.658-33.658-85.439 0-119.097s85.439-33.658 119.097 0l295.154 295.154 295.154-295.154c33.658-33.658 85.439-33.658 119.097 0s33.658 85.439 0 119.097l-295.154 295.154z" />
+          </svg>
+          <svg class="hamburger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+             viewBox="0 0 120 96" style="enable-background:new 0 0 120 96;" xml:space="preserve">
+            <rect stroke="#fff" fill="#fff" y="79" width="120" height="17"/>
+            <rect stroke="#fff" fill="#fff" y="39" width="120" height="17"/>
+            <rect stroke="#fff" fill="#fff" width="120" height="17"/>
+          </svg>
+        </span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--search js-search"
+              data-toggle="collapse" data-target="#search" aria-expanded="false">
+        <span class="menu glyphicon">
+          <svg class="search-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.45 15.1">
+            <g>
+              <path fill="#222" d="M323.29,41l-2.85-2.85a6.5,6.5,0,1,0-2,2.21l2.77,2.77A1.5,1.5,0,0,0,323.29,41Zm-13-6a4.5,4.5,0,1,1,4.5,4.5A4.5,4.5,0,0,1,310.28,35Z" transform="translate(-308.28 -28.5)"/>
+            </g>
+          </svg>
+          <svg class="search-cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+            <path fill="#222" stroke-width="14" d="M628.509 517.026l295.154 295.154c33.658 33.658 33.658 85.439 0 119.097-15.534 15.534-38.836 25.89-59.549 25.89s-44.015-10.356-59.549-25.89l-295.154-295.154-295.154 295.154c-15.534 15.534-38.836 25.89-59.549 25.89s-44.015-10.356-59.549-25.89c-33.658-33.658-33.658-85.439 0-119.097l295.154-295.154-295.154-295.154c-33.658-33.658-33.658-85.439 0-119.097s85.439-33.658 119.097 0l295.154 295.154 295.154-295.154c33.658-33.658 85.439-33.658 119.097 0s33.658 85.439 0 119.097l-295.154 295.154z"></path>
+          </svg>
+        </span>
+      </button>
+      <button type="button" class="navbar-toggle collapsed navigation__button navigation__button--enza"
+              data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        Enza Zaden
+      </button>
+    </div>
+    <!-- NAVIGATION:MENUBUTTONS::END -->
+    <!-- NAVIGATION:MENUITEMS::START -->
+    <div class="navigation__menu collapse navbar-collapse js-navigation-menu" id="menu">
+      <div class="modal-backdrop js-backdrop animated navigationfadeIn"></div>
+      <ul class="nav navbar-nav">
+        <li class="navigation__menu__item navigation__menu__item--country navigation__menu__item--logo">
+          <a class="navigation__menu__item__label" href="#">Enza Zaden</a>
+        </li>
+        <li class="dropdown navigation__menu__item navigation__menu__item--country">
+          <a href="#" class="dropdown-toggle navigation__menu__item__label"
+             data-toggle="dropdown" role="button"
+             aria-haspopup="true"
+             aria-expanded="false">
+            <span class="flag flag-nl"></span>Enza Zaden Global
+            <span class="arrow glyphicon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                <path class="circle" fill="#fff" d="M30,3A27,27,0,1,1,3,30,27,27,0,0,1,30,3m0-3A30,30,0,1,0,60,30,30.09,30.09,0,0,0,30,0h0Z"/>
+                <circle class="circle" fill="#fff" cx="30" cy="30" r="27"/>
+                <path class="arr" fill="#fff" d="M29.3,17.7a2.35,2.35,0,0,0-3.3,0A2.19,2.19,0,0,0,26,21l9.1,9L26,39a2.37,2.37,0,0,0,3.4,3.3L40,31.7a2.35,2.35,0,0,0,0-3.3Z"/>
+              </svg>
+            </span>
+          </a>
+          <!-- NAVIGATION:SUBMENUITEMS::START -->
+          <ul class="dropdown-menu">
+            <li class="navigation__menu__item navigation__menu__item--country">
+              <a class="navigation__menu__item__label navigation__menu__item__label"
+                 title="INFO@ENZAZADEN.CO.UK" href="#">
+                <span class="flag flag-gb"></span>UNITED KINGDOM
+              </a>
+            </li>
+            <li class="navigation__menu__item navigation__menu__item--country">
+              <a class="navigation__menu__item__label navigation__menu__item__label"
+                 title="INFO@ENZAZADEN.CO.UK" href="#">
+                <span class="flag flag-us"></span>UNITED STATES
+              </a>
+            </li>
+          </ul>
+          <!-- NAVIGATION:SUBMENUITEMS::END -->
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--contact">
+          <a class="navigation__menu__item__label navigation__menu__item__label--email"
+             title="INFO@ENZAZADEN.CO.UK" href="INFO@ENZAZADEN.CO.UK">
+            <span class="contact-icon">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 125" style="enable-background:new 0 0 100 125;" xml:space="preserve">
+                <polygon fill="#fff" points="84.8,65.6 84.8,34.7 64.8,50.6 "/>
+                <path fill="#fff" d="M51.8,60.9c-0.5,0.4-1.1,0.6-1.8,0.6s-1.2-0.2-1.8-0.6l-8.4-6.7L15.3,72.6h69.5L60.2,54.3L51.8,60.9z"/>
+                <polygon fill="#fff" points="83.2,28.8 16.8,28.8 50,55.1 "/>
+                <polygon fill="#fff" points="15.2,34.7 15.2,65.6 35.2,50.6 "/>
+              </svg>
+            </span>
+            INFO@ENZAZADEN.CO.UK
+          </a>
+          <a class="navigation__menu__item__label navigation__menu__item__label--phone"
+             title="0044 - 123456789" href="0044 - 123456789">
+            <span class="contact-icon">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 viewBox="0 0 100 125" style="enable-background:new 0 0 100 125;" xml:space="preserve">
+                <path fill="#fff" d="M31.8,61.2c11.9,14.4,40.9,28.2,47.9,25.1s8.5-9.8,8.2-12.9S71.7,60.8,67.7,59s-8.6,4-10.8,6.5c-2.3,2.4-11.1-4.9-14.9-8.6
+                  c0,0-10-11.2-7.7-13.6s8-7.2,6-11.1S28.2,12.7,25,12.5c-3.1-0.2-9.7,1.6-12.5,8.7S23.1,55.4,38,66.7"/>
+              </svg>
+            </span>
+            0044 - 123456789
+          </a>
+        </li>
+        <li class="navigation__menu__item">
+          <a class="navigation__menu__item__label" href="#">News & Innovation</a></li>
+        <li class="navigation__menu__item">
+          <a class="navigation__menu__item__label" href="#">Products & Services</a></li>
+        <li class="navigation__menu__item visible-xs visible-sm">
+          <a class="navigation__menu__item__label" href="#">Careers & learning</a></li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Product Overview</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Menu Item</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Menu Item 2</a>
+        </li>
+        <li class="navigation__menu__item visible-xs visible-sm">
+          <a class="navigation__menu__item__label" href="#">This is Enza Zaden</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Company profile</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">History</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Enza worldwide</a>
+        </li>
+        <li class="navigation__menu__item navigation__menu__item--sub">
+          <a class="navigation__menu__item__label" href="#">Contact</a>
+        </li>
+        <!-- DESKTOP-SUBMENU::START -->
+        <li class="navigation__menu__item visible-md visible-lg">
+          <a class="navigation__menu__item__label" id="as" href="#" role="button" aria-haspopup="true" aria-expanded="false">Careers & learning</a>
+          <ul class="dropdown-menu navigation__menu__item__sub" aria-labelledby="as">
+            <li class="navigation__menu__item__sub__item--table">
+              <a class="navigation__menu__item__sub__item" href="#" title="">
+                <span class="menu-label">Sander</span>
+              </a>
+            </li>
+            <li class="navigation__menu__item__sub__item--table">
+              <a class="navigation__menu__item__sub__item" href="#" title="" class="menu-label">
+                <span class="menu-label">Sander & collega's</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- DESKTOP-SUBMENU::END -->
+        <!-- DESKTOP-SUBMENU::START -->
+        <li class="navigation__menu__item visible-md visible-lg">
+          <a class="navigation__menu__item__label" id="as2" href="#" role="button" aria-haspopup="true" aria-expanded="false">This is Enza Zaden</a>
+          <ul class="dropdown-menu navigation__menu__item__sub" aria-labelledby="as">
+            <li class="navigation__menu__item__sub__item--table">
+              <a class="navigation__menu__item__sub__item" href="#" title="">
+                <span class="menu-label">Sander</span>
+              </a>
+            </li>
+            <li class="navigation__menu__item__sub__item--table">
+              <a class="navigation__menu__item__sub__item" href="#" title="" class="menu-label">
+                <span class="menu-label">Sander & collega's</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- DESKTOP-SUBMENU::END -->
+        <li class="navigation__menu__item">
+          <a class="navigation__menu__item__label" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="menu glyphicon">&nbsp;
+              <svg class="search-glass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.45 15.1">
+                <g>
+                  <path fill="#222" d="M323.29,41l-2.85-2.85a6.5,6.5,0,1,0-2,2.21l2.77,2.77A1.5,1.5,0,0,0,323.29,41Zm-13-6a4.5,4.5,0,1,1,4.5,4.5A4.5,4.5,0,0,1,310.28,35Z" transform="translate(-308.28 -28.5)"/>
+                </g>
+              </svg>
+              <svg class="search-cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                <path fill="#222" stroke-width="14" d="M628.509 517.026l295.154 295.154c33.658 33.658 33.658 85.439 0 119.097-15.534 15.534-38.836 25.89-59.549 25.89s-44.015-10.356-59.549-25.89l-295.154-295.154-295.154 295.154c-15.534 15.534-38.836 25.89-59.549 25.89s-44.015-10.356-59.549-25.89c-33.658-33.658-33.658-85.439 0-119.097l295.154-295.154-295.154-295.154c-33.658-33.658-33.658-85.439 0-119.097s85.439-33.658 119.097 0l295.154 295.154 295.154-295.154c33.658-33.658 85.439-33.658 119.097 0s33.658 85.439 0 119.097l-295.154 295.154z" />
+              </svg>
+            </span>
+          </a>
+          <ul class="dropdown-menu desktop" aria-labelledby="dLabel">
+            <li class="dropdown-menu__search">
+              <div class="js-navigation-search" id="searchterm">
+                <form class="dropdown-menu__form form-inline" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ik ben opzoek naar...">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="modal-menu-background"></div>
+    </div>
+    <!-- NAVIGATION:MENUITEMS::END -->
+    <!-- NAVIGATION:MENUITEMS:SEARCH::START -->
+    <div class="navigation__menu navigation__menu--search collapse navbar-collapse js-navigation-search" id="search">
+      <!--<div class="modal-backdrop js-backdrop animated navigationfadeIn"></div>-->
+      <form class="navigation__menu__form navbar-form navbar-left form-inline" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Ik ben opzoek naar...">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+    </div>
+    <!-- NAVIGATION:MENUITEMS:SEARCH::END -->
+  </div>
+</nav>
+<!-- NAVIGATION::END -->
+
 <!-- CAROUSEL::START -->
 <div class="container-fluid container--carousel">
   <div class="row">

@@ -7074,7 +7074,7 @@ button.close {
   margin: 0px;
 }
 .navigation .navigation__button.navigation__button--hamburger {
-  background-color: #222222;
+  background-color: #000000;
   background-size: 7.5px 7.5px;
   height: 51.5px;
   order: 1;
@@ -8158,6 +8158,7 @@ button.close {
     display: none !important;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item:last-child {
+    border-right: 1px solid #cccccc;
     display: block;
     height: 70px;
     width: 119px;
@@ -8194,9 +8195,10 @@ button.close {
     opacity: 1 !important;
   }
   .navigation .container-fluid .navbar-header .navigation__button.navigation__button--logo .navigation__button__image {
-    border: none;
+    border: 1px solid #ffffff;
+    border-top: 0px;
     max-width: 120px;
-    top: 39px;
+    top: 44px;
     right: 0px;
     width: 120px;
   }
@@ -8308,7 +8310,7 @@ button.close {
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--country .navigation__menu__item__label,
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--logo .navigation__menu__item__label,
   .navigation .navigation__menu .navigation__menu__item.navigation__menu__item--contact .navigation__menu__item__label {
-    background-color: #222222;
+    background-color: #000000;
     border: 1px solid #515151;
     border-left: none;
     border-right: none;
@@ -12966,7 +12968,7 @@ button.close {
   overflow: hidden;
   text-align: center;
   z-index: 99999999;
-  background-color: #aac426;
+  background-color: #ededed;
   color: #eeeeee;
   width: 50px;
   height: 48px;
@@ -12974,10 +12976,10 @@ button.close {
   right: 30px;
   bottom: 30px;
   padding-top: 2px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
