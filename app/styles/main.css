@@ -6796,15 +6796,17 @@ button.close {
     margin-top: 0px;
     padding: 0px;
     position: absolute;
-    right: 100px;
+    right: 101px;
     width: auto;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form .form-control {
+    border-radius: 0px;
     box-shadow: none;
     font-size: 16px;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form .btn {
     border-left: none;
+    border-radius: 0px;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__item .navigation__menu__item__label.navigation__menu__item__label--email {
     width: 189px;
@@ -6900,15 +6902,17 @@ button.close {
   margin-top: 0px;
   padding: 0px;
   position: relative;
-  right: 88px;
+  right: 89px;
   width: 50%;
 }
 .navigation .navigation__menu .navigation__menu__form .form-control {
+  border-radius: 0px;
   box-shadow: none;
   font-size: 16px;
 }
 .navigation .navigation__menu .navigation__menu__form .btn {
   border-left: none;
+  border-radius: 0px;
 }
 .navigation .navigation__menu .navigation__menu__item {
   background-color: #ffffff;
@@ -6923,8 +6927,12 @@ button.close {
   display: block;
 }
 .navigation .navigation__menu .navigation__menu__item .dropdown-menu .form-control {
+  border-radius: 0px;
   box-shadow: none;
   font-size: 8px;
+}
+.navigation .navigation__menu .navigation__menu__item .dropdown-menu .btn {
+  border-radius: 0px !important;
 }
 .navigation .navigation__menu .navigation__menu__item.start {
   margin-top: -3px;
