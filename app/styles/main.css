@@ -9674,6 +9674,7 @@ button.close {
     width: 100% !important;
   }
   .container.itemslist {
+    margin-top: 50px;
     padding-left: 95px;
   }
   .container.itemslist .article--list .itemslist__item {
@@ -10174,6 +10175,9 @@ button.close {
   text-overflow: ellipsis;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .variety-detail {
+    margin-top: 50px;
+  }
   .variety-detail .fullsize .variety-detail__social {
     border-bottom: none !important;
     border-top: none !important;
@@ -10290,6 +10294,9 @@ button.close {
   .container.variety-detail .variety-detail__brochures .variety-detail__brochures__links {
     padding-left: 0px !important;
   }
+}
+.variety-detail {
+  margin-top: 50px;
 }
 .variety-detail .variety-detail__image {
   width: 100%;
