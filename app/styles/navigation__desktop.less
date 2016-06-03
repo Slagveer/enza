@@ -86,6 +86,7 @@
               border: none;
               font-size: 12px;
               height: 41px;
+              width: 300px;
               .navigation__menu__item__label {
                 height: 41px;
               }
@@ -100,17 +101,22 @@
               .navigation__menu__item__label {
                 line-height: 37px;
                 padding: 0px;
-                padding-left: 33px;
+                padding-left: 52px;
                 .flag {
                   left: 26px;
                   position: absolute;
                   top: 14px;
                 }
                 .arrow {
+                  float: left;
                   height: 24px;
                   right: -5px;
+                  position: relative;
                   top: 6px;
                   width: 24px;
+                }
+                .name {
+                  float: left;
                 }
               }
             }
@@ -134,7 +140,7 @@
               padding: 0px;
               top: -1px;
               //width: 832px;
-              width: 623px;
+              width: 503px;
               ~ .navigation__menu__item {
                 background-color: @white;
                 height: 60px !important;
@@ -194,17 +200,17 @@
               }
               .navigation__menu__item__label {
                 border: none;
-                height: 41px;
+                height: 42px;
                 line-height: 37px;
                 padding: 0px;
                 &.navigation__menu__item__label--email {
-                  padding-left: 190px;
+                  padding-left: 80px;
                   text-align: right;
                   width: 70%;
                 }
                 &.navigation__menu__item__label--phone {
                   height: 42px;
-                  padding-left: 60px;
+                  padding-left: 20px;
                   text-align: left;
                   width: 30%;
                 }

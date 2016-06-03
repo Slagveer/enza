@@ -50,33 +50,38 @@
       width: 54%;
     }
   }
-  .container.content {
-    margin-top: 80px !important;
-    .row {
-      &:nth-child(2) {
-        .content__paragraaf {
-          padding-right: 15px !important;
-          &:nth-of-type(2) {
-            padding-left: 70px;
-            top: -60px;
+  .container {
+    &.content {
+      margin-top: 80px !important;
+      .row {
+        &:nth-child(2) {
+          .content__lists {
+            margin-top: -52px;
           }
-          .content__paragraaf__title:first-of-type {
-            background-color: white;
-            height: 95px;
-            margin-bottom: -71px;
-            margin-left: -23px;
-            margin-right: -20px;
-            padding-left: 130px;
-            padding-top: 50px;
-            position: relative;
-            top: -150px;
-          }
-          h2:first-of-type {
-            position: absolute;
-            top: -65px;
-          }
-          + .content__paragraaf {
-            //margin-top: -25px;
+          .content__paragraaf {
+            padding-right: 15px !important;
+            &:nth-of-type(2) {
+              padding-left: 70px;
+              top: -60px;
+            }
+            .content__paragraaf__title:first-of-type {
+              background-color: white;
+              height: 95px;
+              margin-bottom: -71px;
+              margin-left: -23px;
+              margin-right: -20px;
+              padding-left: 130px;
+              padding-top: 50px;
+              position: relative;
+              top: -150px;
+            }
+            h2:first-of-type {
+              position: absolute;
+              top: -65px;
+            }
+            + .content__paragraaf {
+              //margin-top: -25px;
+            }
           }
         }
       }

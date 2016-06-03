@@ -61,60 +61,86 @@
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
-  .variety-detail {
-    .fullsize {
-      //margin-bottom: 2%;
-      //margin-top: 2%;
-      //min-height: 94%;
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-      .variety-detail__social {
-        border-bottom: none !important;
-        border-top: none !important;
+  .container {
+    &.content {
+      .container-fluid {
+        &.variety-detail {
+          .variety-detail__social {
+            border: none !important;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            padding: 0px;
+            .variety-detail__social__title {
+              font-size: 21px;
+              font-weight: bold;
+              margin-bottom: 5px;
+              text-align: left;
+            }
+            .variety-detail__social__container {
+              border-top: 1px solid @grey;
+              justify-content: flex-start;
+              padding-top: 10px;
+              width: 92%;
+            }
+          }
+        }
       }
     }
-    .variety-detail__header {
-      padding-left: 110px * @retina-factor !important;
-      padding-top: 142px * @retina-factor !important;
-      .variety-detail__description {
+    &.variety-detail {
+      .fullsize {
+        //margin-bottom: 2%;
+        //margin-top: 2%;
+        //min-height: 94%;
         padding-left: 0px !important;
+        padding-right: 0px !important;
+        .variety-detail__social {
+          border-bottom: none !important;
+          border-top: none !important;
+        }
       }
-      .variety-detail__title {
-        padding-left: 0px !important;
-        padding-top: 0px !important;
-        text-align: left;
+      .variety-detail__header {
+        padding-left: 110px * @retina-factor !important;
+        padding-top: 142px * @retina-factor !important;
+        .variety-detail__description {
+          padding-left: 0px !important;
+        }
+        .variety-detail__title {
+          padding-left: 0px !important;
+          padding-top: 0px !important;
+          text-align: left;
+        }
       }
-    }
-    .variety-detail__container {
-      .variety-detail__image {
-        height: 380px * @retina-factor !important;
-        padding-left: 20px * @retina-factor !important;
-        padding-right: 20px * @retina-factor !important;
-        padding-top: 0px * @retina-factor !important;
+      .variety-detail__container {
+        .variety-detail__image {
+          height: 380px * @retina-factor !important;
+          padding-left: 20px * @retina-factor !important;
+          padding-right: 20px * @retina-factor !important;
+          padding-top: 0px * @retina-factor !important;
+        }
       }
-    }
-    .variety-detail__list {
-      padding-left: 110px * @retina-factor !important;
-      .variety-detail__list__title,
-      .variety-detail__list__description {
-        float: left;
-        margin-bottom: 0px * @retina-factor !important;
+      .variety-detail__list {
+        padding-left: 110px * @retina-factor !important;
+        .variety-detail__list__title,
+        .variety-detail__list__description {
+          float: left;
+          margin-bottom: 0px * @retina-factor !important;
+        }
+        .variety-detail__list__description {
+          padding-left: 204px * @retina-factor !important;
+        }
+        .variety-detail__list__title {
+          clear: left;
+        }
       }
-      .variety-detail__list__description {
-        padding-left: 204px * @retina-factor !important;
-      }
-      .variety-detail__list__title {
-        clear: left;
-      }
-    }
-    .variety-detail__brochures {
-      padding-left: 110px * @retina-factor !important;
-      .variety-detail__brochures__title {
-        padding-left: 0px * @retina-factor !important;
-        padding-top: 46px * @retina-factor !important;
-      }
-      .variety-detail__brochures__links {
-        padding-left: 0px !important;
+      .variety-detail__brochures {
+        padding-left: 110px * @retina-factor !important;
+        .variety-detail__brochures__title {
+          padding-left: 0px * @retina-factor !important;
+          padding-top: 46px * @retina-factor !important;
+        }
+        .variety-detail__brochures__links {
+          padding-left: 0px !important;
+        }
       }
     }
   }
