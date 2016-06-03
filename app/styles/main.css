@@ -6800,6 +6800,7 @@ button.close {
     width: auto;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form .form-control {
+    box-shadow: none;
     font-size: 16px;
   }
   .navigation .container-fluid .navigation__menu .navigation__menu__form .btn {
@@ -6903,6 +6904,7 @@ button.close {
   width: 50%;
 }
 .navigation .navigation__menu .navigation__menu__form .form-control {
+  box-shadow: none;
   font-size: 16px;
 }
 .navigation .navigation__menu .navigation__menu__form .btn {
@@ -6921,6 +6923,7 @@ button.close {
   display: block;
 }
 .navigation .navigation__menu .navigation__menu__item .dropdown-menu .form-control {
+  box-shadow: none;
   font-size: 8px;
 }
 .navigation .navigation__menu .navigation__menu__item.start {
@@ -8263,6 +8266,7 @@ button.close {
     display: block;
   }
   .navigation .navigation__menu .navigation__menu__item .dropdown-menu .form-control {
+    border-right: 0px;
     font-size: 16px;
     height: 42px;
     box-shadow: none;
