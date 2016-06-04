@@ -1,31 +1,44 @@
 // TABLET::START
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
-
+  .loadmore {
+    padding: 25px 0 0 0 !important;
+    .carousel-caption__button {
+      .carousel-caption__button__arrow {
+        &.next {
+          top: 2px !important;
+        }
+      }
+    }
+  }
 }
 // TABLET::END
 
 // DESKTOP::START
 @media (min-width: @desktop_min) {
-.loadmore {
-  padding: 35px 0 0 0 !important;
-  .carousel-caption__button {
-    max-width: 200px !important;
-    height: 53px !important;
-    .carousel-caption__button__arrow {
-      left: 45px !important;
-      top: 13px !important;
-    }
-    .carousel-caption__button__text {
-      margin-top: 3px !important;
-      padding-left: 66px !important;
+  .loadmore {
+    padding: 35px 0 0 0 !important;
+    .carousel-caption__button {
+      max-width: 100% !important;
+      height: 53px !important;
+      .carousel-caption__button__arrow {
+        left: 45px !important;
+        top: 13px !important;
+        &.next {
+          left: 0px !important;
+          top: 8px !important;
+        }
+      }
+      .carousel-caption__button__text {
+        margin-top: 3px !important;
+        padding-left: 66px !important;
+      }
     }
   }
-}
 }
 // DESKTOP::END
 
 .loadmore {
-  padding: 25px 0 0 0;
+  padding: 25px 0 25px 0;
   text-align: center;
   .carousel-caption__button {
     background: none;
@@ -35,9 +48,9 @@
     font-family: @font-family-crete;
     font-size: 27px * @retina-factor;
     height: 81px * @retina-factor;
-    max-width: 310px * @retina-factor;
+    max-width: 100%;//310px * @retina-factor;
     position: relative;
-    width: 100%;
+    width: auto;
     &:hover,
     &:active {
       border-color: @green;
@@ -50,6 +63,18 @@
             stroke: @green;
             fill: @green;
           }
+          .circle {
+            fill: @green;
+            stroke: @green;
+            opacity: 0;
+          }
+          .border {
+            fill: @green;
+            stroke: @green;
+          }
+          .arrow {
+            fill: @green;
+          }
         }
       }
     }
@@ -59,6 +84,10 @@
       line-height: 67px * @retina-factor;
       margin-top: -3px;
       padding-left: 100px * @retina-factor;
+      &.next {
+        padding-left: 15px !important;
+        padding-right: 10px !important;
+      }
     }
     .carousel-caption__button__arrow {
       left: 48px * @retina-factor;
@@ -70,12 +99,31 @@
         top: 0px;
         -webkit-animation: rotate .6s linear infinite;
       }
+      &.next {
+        display: inline-block;
+        left: 0px;
+        padding-right: 20px;
+        position: relative;
+        top: 2px;
+      }
       svg {
         height: 47px * @retina-factor;
         width: 47px * @retina-factor;
         path {
           fill: @dark-grey;
           stroke: @dark-grey;
+        }
+        .circle {
+          fill: @white;
+          stroke: @white;
+          opacity: 0;
+        }
+        .border {
+          fill: @dark-grey;
+          stroke: @dark-grey;
+        }
+        .arrow {
+          fill: @dark-grey;
         }
       }
     }

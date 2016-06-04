@@ -9410,6 +9410,9 @@ button.close {
 .teaserbox.teaserbox--child-overview {
   margin-bottom: 30px;
 }
+.teaserbox.teaserbox--child-overview .teaserbox__description {
+  bottom: 0;
+}
 .teaserbox.teaserbox--variety-detail,
 .teaserbox.teaserbox--extra-content,
 .teaserbox.teaserbox--child-overview {
@@ -9690,9 +9693,11 @@ button.close {
     padding-left: 95px;
   }
   .container.itemslist .article--list .itemslist__item {
-    padding: 0px;
     height: 173px;
     margin-top: 24px;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
   }
   .container.itemslist .article--list .itemslist__item .itemslist__item__image {
     height: 173px;
@@ -11799,17 +11804,29 @@ button.close {
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .loadmore {
+    padding: 25px 0 0 0 !important;
+  }
+  .loadmore .carousel-caption__button .carousel-caption__button__arrow.next {
+    top: 2px !important;
+  }
+}
 @media (min-width: 1200px) {
   .loadmore {
     padding: 35px 0 0 0 !important;
   }
   .loadmore .carousel-caption__button {
-    max-width: 200px !important;
+    max-width: 100% !important;
     height: 53px !important;
   }
   .loadmore .carousel-caption__button .carousel-caption__button__arrow {
     left: 45px !important;
     top: 13px !important;
+  }
+  .loadmore .carousel-caption__button .carousel-caption__button__arrow.next {
+    left: 0px !important;
+    top: 8px !important;
   }
   .loadmore .carousel-caption__button .carousel-caption__button__text {
     margin-top: 3px !important;
@@ -11817,7 +11834,7 @@ button.close {
   }
 }
 .loadmore {
-  padding: 25px 0 0 0;
+  padding: 25px 0 25px 0;
   text-align: center;
 }
 .loadmore .carousel-caption__button {
@@ -11828,9 +11845,9 @@ button.close {
   font-family: 'Crete Round', serif;
   font-size: 13.5px;
   height: 40.5px;
-  max-width: 155px;
+  max-width: 100%;
   position: relative;
-  width: 100%;
+  width: auto;
 }
 .loadmore .carousel-caption__button:hover,
 .loadmore .carousel-caption__button:active {
@@ -11845,12 +11862,31 @@ button.close {
   stroke: #aac426;
   fill: #aac426;
 }
+.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg .circle,
+.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg .circle {
+  fill: #aac426;
+  stroke: #aac426;
+  opacity: 0;
+}
+.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg .border,
+.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg .border {
+  fill: #aac426;
+  stroke: #aac426;
+}
+.loadmore .carousel-caption__button:hover .carousel-caption__button__arrow svg .arrow,
+.loadmore .carousel-caption__button:active .carousel-caption__button__arrow svg .arrow {
+  fill: #aac426;
+}
 .loadmore .carousel-caption__button .carousel-caption__button__text {
   float: left;
   display: inline-block;
   line-height: 33.5px;
   margin-top: -3px;
   padding-left: 50px;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__text.next {
+  padding-left: 15px !important;
+  padding-right: 10px !important;
 }
 .loadmore .carousel-caption__button .carousel-caption__button__arrow {
   left: 24px;
@@ -11863,6 +11899,13 @@ button.close {
   top: 0px;
   -webkit-animation: rotate .6s linear infinite;
 }
+.loadmore .carousel-caption__button .carousel-caption__button__arrow.next {
+  display: inline-block;
+  left: 0px;
+  padding-right: 20px;
+  position: relative;
+  top: 2px;
+}
 .loadmore .carousel-caption__button .carousel-caption__button__arrow svg {
   height: 23.5px;
   width: 23.5px;
@@ -11870,6 +11913,18 @@ button.close {
 .loadmore .carousel-caption__button .carousel-caption__button__arrow svg path {
   fill: #515151;
   stroke: #515151;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__arrow svg .circle {
+  fill: #ffffff;
+  stroke: #ffffff;
+  opacity: 0;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__arrow svg .border {
+  fill: #515151;
+  stroke: #515151;
+}
+.loadmore .carousel-caption__button .carousel-caption__button__arrow svg .arrow {
+  fill: #515151;
 }
 @-webkit-keyframes rotate {
   from {
