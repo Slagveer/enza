@@ -28,7 +28,9 @@
         <article class="article--list">
           <a class="varietylist__item" href="#" alt="">
             <div class="varietylist__item__top">
-            <img class="varietylist__item__image" src="http://dummyimage.com/1000x800/ff0000/fff" title="">
+            <div class="varietylist__item__image js-varietylist__item__image">
+              <img src="http://dummyimage.com/1000x800/ff0000/fff" title="">
+            </div>
             <div class="varietylist__item__content">
               <header>
                 <span class="varietylist__item__title" href="#" title="">
@@ -94,6 +96,10 @@
 
 <!-- build:js scripts/main.js -->
 <script src="../bower_components/jquery/jquery.js"></script>
+<script src="../bower_components/underscore/underscore.js"></script>
+<script src="../bower_components/ev-emitter/ev-emitter.js"></script>
+<script src="../bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="../bower_components/imagefill/js/jquery-imagefill.js"></script>
 <!-- fileblock:js appScript -->
 <script src="/scripts/core.js"></script>
 <script src="/scripts/carousel.js"></script>

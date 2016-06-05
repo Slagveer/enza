@@ -9523,6 +9523,17 @@ button.close {
   margin-right: -15px;
   padding: 22.5px;
 }
+.teaserbox.teaserbox--news .image-background,
+.teaserbox.teaserbox--story .image-background,
+.teaserbox.teaserbox--news--grey .image-background {
+  background-color: #000000;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: .3;
+}
 .teaserbox.teaserbox--news .teaserbox__image,
 .teaserbox.teaserbox--story .teaserbox__image,
 .teaserbox.teaserbox--news--grey .teaserbox__image {
@@ -9719,7 +9730,7 @@ button.close {
     padding-top: 10px;
   }
   .container.itemslist .article--list .itemslist__item .itemslist__item__link {
-    right: 30px;
+    right: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -9854,6 +9865,12 @@ button.close {
   .itemslist {
     padding-left: 95px;
   }
+  .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
+    right: 28px !important;
+  }
+  .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__content {
+    padding-top: 29px !important;
+  }
   .itemslist .article--list .itemslist__item {
     padding: 0px;
     height: 173px;
@@ -9894,6 +9911,12 @@ button.close {
 }
 .itemslist.itemslist--content {
   padding-top: 33.5px;
+}
+.itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
+  right: 26px;
+}
+.itemslist.itemslist--extra-content .itemslist__item .itemslist__item__content {
+  padding-top: 5px;
 }
 .itemslist .itemslist__header {
   line-height: 40px;
@@ -9938,6 +9961,12 @@ button.close {
   margin-top: 4.5px;
   padding: 2px 5px;
   text-align: left;
+}
+.itemslist .itemslist__item .itemslist__item__content .itemslist__item__title.extra-content {
+  border: 0px;
+  font-size: 24px;
+  padding-left: 0px;
+  padding-bottom: 10px;
 }
 .itemslist .itemslist__item .itemslist__item__content .itemslist__item__title .label-square {
   color: #515151;
@@ -9998,7 +10027,6 @@ button.close {
     padding-top: 70px;
   }
   .varietylist.varietylist--office .varietylist__item {
-    height: 186px !important;
     margin-left: 37px !important;
     margin-right: 37px !important;
     padding: 19px !important;
@@ -10015,7 +10043,6 @@ button.close {
     display: none;
   }
   .varietylist .varietylist__item {
-    height: 186px !important;
     margin-left: 37px !important;
     margin-right: 37px !important;
     padding: 19px !important;
@@ -10029,7 +10056,6 @@ button.close {
     padding-top: 70px;
   }
   .varietylist.varietylist--office .varietylist__item {
-    height: 186px !important;
     margin-left: 37px !important;
     margin-right: 37px !important;
     padding: 19px !important;
@@ -10046,7 +10072,6 @@ button.close {
     display: none;
   }
   .varietylist .varietylist__item {
-    height: 186px !important;
     margin-left: 37px !important;
     margin-right: 37px !important;
     padding: 19px !important;
@@ -10066,7 +10091,7 @@ button.close {
   flex-flow: column nowrap;
   margin-top: 15px;
   padding: 25px;
-  height: 207.5px;
+  height: auto;
 }
 .varietylist .varietylist__item:hover {
   text-decoration: none;
@@ -11602,6 +11627,10 @@ button.close {
   .container--carousel .carousel .thumbnail-controls .container-fluid .item__image__text {
     display: block !important;
   }
+  .container--carousel .carousel .thumbnail-controls .container .item__overlay,
+  .container--carousel .carousel .thumbnail-controls .container-fluid .item__overlay {
+    height: 57px !important;
+  }
 }
 .container--carousel {
   padding-bottom: 50px;
@@ -11670,7 +11699,7 @@ button.close {
   height: 297px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .container--carousel__slides__item__image .slide-background {
-  background-color: #515151;
+  background-color: #000000;
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -11754,7 +11783,7 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   background-color: #000000;
-  height: 57px;
+  height: 51px;
   left: 0px;
   right: 0px;
   opacity: 0.6;
@@ -12877,6 +12906,7 @@ button.close {
 @media (min-width: 768px) and (max-width: 900px) {
   p.quote {
     left: -225px !important;
+    width: 40% !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -12884,7 +12914,7 @@ button.close {
     left: -300px;
     position: absolute;
     top: 0px;
-    width: 40%;
+    width: 40% !important;
   }
 }
 .content .content__paragraaf {
@@ -12910,6 +12940,9 @@ button.close {
   font-size: 11.55555556px;
   line-height: 11.55555556px;
 }
+.content .content__paragraaf p {
+  width: 90%;
+}
 .content .content__paragraaf .content__paragraaf__description--bold,
 .content .content__paragraaf p,
 .content .content__paragraaf address,
@@ -12921,6 +12954,7 @@ button.close {
   font-weight: normal;
   margin-bottom: 18.5px;
   padding-top: 12px;
+  width: 90%;
 }
 .content .content__paragraaf .content__paragraaf__description--normal {
   font-weight: normal;
