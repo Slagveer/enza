@@ -9515,6 +9515,10 @@ button.close {
 .teaserbox.teaserbox--news--grey:hover .teaserbox__link svg .arrow {
   fill: #aac426;
 }
+.teaserbox.teaserbox--news .teaserbox__description .teaserbox__description__title,
+.teaserbox.teaserbox--story .teaserbox__description .teaserbox__description__title {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
 .teaserbox.teaserbox--news,
 .teaserbox.teaserbox--story,
 .teaserbox.teaserbox--news--grey {
