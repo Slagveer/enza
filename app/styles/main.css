@@ -9735,6 +9735,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .container.content .container.itemslist {
+    margin-top: 0px !important;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -9863,6 +9864,7 @@ button.close {
     fill: #aac426;
   }
   .itemslist {
+    margin-top: 50px;
     padding-left: 95px;
   }
   .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
@@ -10268,6 +10270,9 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
+  .container.content .container-fluid.variety-detail {
+    margin-top: 0px !important;
+  }
   .container.content .container-fluid.variety-detail .variety-detail__social {
     border: none !important;
     margin-bottom: 0px;
