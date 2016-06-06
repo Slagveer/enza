@@ -6939,6 +6939,7 @@ button.close {
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label {
   color: #515151;
+  font-weight: normal;
   padding: 19px 0px 19px 23.5px;
 }
 .navigation .navigation__menu .navigation__menu__item .navigation__menu__item__label .menu {
@@ -10352,6 +10353,9 @@ button.close {
     height: 260px !important;
   }
 }
+.variety-detail.onepager .col-xs-12:first-child .variety-detail__header {
+  margin-top: 50px;
+}
 .variety-detail .variety-detail__image {
   width: 100%;
   height: 219.5px;
@@ -11797,7 +11801,7 @@ button.close {
 }
 .container--carousel .container--carousel__thumbnails .container--carousel__thumbnails__item .item__overlay {
   background-color: #000000;
-  height: 51px;
+  height: 57px;
   left: 0px;
   right: 0px;
   opacity: 0.6;
