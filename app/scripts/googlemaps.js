@@ -124,6 +124,8 @@
     $country.on('change', onChange);
     addOffices();
     addOfficesList();
+    // Wait for google than continue cropping
+    $('.js-varietylist__item__image').imagefill();
   }
 
   function onChange(evt) {
