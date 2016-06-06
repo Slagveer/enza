@@ -145,6 +145,19 @@
       }
     }
   }
+  .variety-detail {
+    .variety-detail__others {
+      .variety-detail__others__horizontal-list {
+        height: 260px !important;
+        overflow-x: visible !important;
+        .list-group {
+          &.list-group-horizontal {
+            height: 260px !important;
+          }
+        }
+      }
+    }
+  }
 }
 // DESKTOP::END
 
@@ -367,6 +380,7 @@
         width: 100%;
         white-space: nowrap;
         .list-group-item {
+          background: none;
           border: none;
           display: inline-block;
           height: 410px * @retina-factor;
