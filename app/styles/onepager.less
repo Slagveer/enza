@@ -1,0 +1,172 @@
+// TABLET::START
+@media (min-width: @tablet_min) and (max-width: @tablet_max) {
+  .onepager {
+    .onepager__image__container {
+      .onepager__image__content {
+        padding-left: 50% !important;
+        padding-right: 0% !important;
+      }
+    }
+  }
+}
+// TABLET::END
+
+// DESKTOP::START
+@media (min-width: @desktop_min) {
+  .onepager {
+    .onepager__image__container {
+      .onepager__image__content {
+        padding-left: 50% !important;
+        padding-right: 0% !important;
+      }
+    }
+  }
+}
+// DESKTOP::END
+.onepager {
+  .onepager__button-group {
+    padding-left: 55px;
+    .btn {
+      border-radius: 20px !important;
+      font-family: @font-family-crete;
+      font-size: 12px;
+      height: 42px;
+      line-height: 30px;
+      margin-bottom: 30px;
+      margin-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  .onepager__image-container {
+    margin-top: 50px;
+    position: relative;
+    .onepager__image {
+      height: 373px;
+      width: 100%;
+    }
+    .onepager__image__content {
+      position: absolute;
+      top: 60px;
+      bottom: 0px;
+      padding-left: 5%;
+      padding-right: 5%;
+      right: 0px;
+      z-index: 1;
+      .onepager__image__title {
+        color: @white;
+        font-family: @font-family-crete;
+        font-size: 30px;
+        margin-bottom: 45px;
+        position: relative;
+        text-shadow: @text-shadow;
+        top: 30px;
+        z-index: 1;
+      }
+      .onepager__image__description {
+        color: @white;
+        font-family: @font-family-open-sanse;
+        font-size: 14px;
+        margin-bottom: 15px;
+        position: relative;
+        text-shadow: @text-shadow;
+      }
+      .onepager__image__button {
+        background: none;
+        border: 1px solid @white;
+        border-radius: 50px * @retina-factor;
+        color: @white;
+        font-family: @font-family-crete;
+        font-size: 27px * @retina-factor;
+        height: 81px * @retina-factor;
+        max-width: 100%;//310px * @retina-factor;
+        position: relative;
+        width: auto;
+        &:hover,
+        &:active {
+          border-color: @green;
+          .onepager__image__button__text {
+            color: @green;
+          }
+          .onepager__image__button__arrow {
+            svg {
+              path {
+                stroke: @green;
+                fill: @green;
+              }
+              .circle {
+                fill: @green;
+                stroke: @green;
+                opacity: 0;
+              }
+              .border {
+                fill: @green;
+                stroke: @green;
+              }
+              .arrow {
+                fill: @green;
+              }
+            }
+          }
+        }
+        .onepager__image__button__text {
+          float: left;
+          display: inline-block;
+          line-height: 67px * @retina-factor;
+          margin-top: -3px;
+          padding-left: 100px * @retina-factor;
+          padding-right: 15px;
+          text-shadow: @text-shadow;
+        }
+        .onepager__image__button__arrow {
+          left: 48px * @retina-factor;
+          position: absolute;
+          display: flex;
+          top: 8px;
+          width: 47px * @retina-factor;
+          svg {
+            height: 47px * @retina-factor;
+            width: 47px * @retina-factor;
+            path {
+              fill: @white;
+              stroke: @white;
+            }
+            .circle {
+              fill: @white;
+              stroke: @white;
+              opacity: 0;
+            }
+            .border {
+              fill: @white;
+              stroke: @white;
+            }
+            .arrow {
+              fill: @white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .onepager__quote {
+    background-color: #faf7d8;
+    height: 375px;
+    margin: 0 0 0 0;
+    padding: 10% 0;
+    .onepager__quote__title {
+      border: none;
+      font-family: @font-family-crete;
+      font-style: italic;
+      line-height: 60px * @retina-factor;
+      margin-bottom: 63px * @retina-factor;
+      margin-left: 20%;
+      margin-right: 20%;
+      padding-top: 45px * @retina-factor;
+      text-align: center;
+    }
+    .onepager__quote__author {
+      font-family: @font-family-open-sanse;
+      text-align: center;
+    }
+  }
+}

@@ -1257,19 +1257,19 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 32.5px;
+  font-size: 45pt;
 }
 h2,
 .h2 {
-  font-size: 21.66666667px;
+  font-size: 30pt;
 }
 h3,
 .h3 {
-  font-size: 15.16666667px;
+  font-size: 21pt;
 }
 h4,
 .h4 {
-  font-size: 11.55555556px;
+  font-size: 16pt;
 }
 h5,
 .h5 {
@@ -9734,7 +9734,7 @@ button.close {
     padding-top: 10px;
   }
   .container.itemslist .article--list .itemslist__item .itemslist__item__link {
-    right: 12px;
+    right: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -9902,7 +9902,7 @@ button.close {
     padding-top: 10px;
   }
   .itemslist .article--list .itemslist__item .itemslist__item__link {
-    right: 30px;
+    right: 24px;
   }
 }
 .itemslist.container .col-xs-12:first-child .itemslist__item {
@@ -9919,7 +9919,7 @@ button.close {
   padding-top: 33.5px;
 }
 .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
-  right: 26px;
+  right: 23px;
 }
 .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__content {
   padding-top: 5px;
@@ -10012,7 +10012,7 @@ button.close {
 }
 .itemslist .itemslist__item .itemslist__item__link {
   align-self: flex-end;
-  bottom: 10px;
+  bottom: 8px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
@@ -10020,7 +10020,7 @@ button.close {
   height: 24px;
   line-height: 10.8pt;
   position: absolute;
-  right: 28px;
+  right: 23px;
   text-align: center;
   vertical-align: middle;
   width: 24px;
@@ -10054,7 +10054,8 @@ button.close {
     padding: 19px !important;
   }
   .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
-    right: 50px !important;
+    bottom: 16px !important;
+    right: 60px !important;
   }
 }
 @media (min-width: 1200px) {
@@ -10083,7 +10084,8 @@ button.close {
     padding: 19px !important;
   }
   .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
-    right: 50px !important;
+    bottom: 16px !important;
+    right: 60px !important;
   }
 }
 .varietylist .article--list {
@@ -10191,7 +10193,7 @@ button.close {
 }
 .varietylist .varietylist__item .varietylist__item__bottom .varietylist__item__link {
   align-self: flex-end;
-  bottom: 12.5px;
+  bottom: 18px;
   color: #aac426;
   display: inline-block;
   flex-shrink: 0;
@@ -10199,7 +10201,7 @@ button.close {
   height: 24px;
   line-height: 10.8pt;
   position: absolute;
-  right: 16px;
+  right: 26px;
   text-align: center;
   vertical-align: middle;
   width: 24px;
@@ -10665,8 +10667,9 @@ button.close {
     top: -150px;
   }
   .container.content .row:nth-child(2) .content__paragraaf h2:first-of-type {
-    position: absolute;
-    top: -65px;
+    margin-bottom: -60px;
+    position: relative;
+    top: -87px;
   }
 }
 @media (min-width: 1200px) {
@@ -10701,8 +10704,9 @@ button.close {
     top: -150px;
   }
   .container.content .row:nth-child(2) .content__paragraaf h2:first-of-type {
-    position: absolute;
-    top: -65px;
+    margin-bottom: -60px;
+    position: relative;
+    top: -87px;
   }
 }
 .content {
@@ -10715,9 +10719,9 @@ button.close {
 }
 .content .content__header .content__header__title {
   font-family: 'Crete Round', serif;
-  font-size: 32px;
-  letter-spacing: 2px;
-  line-height: 36px;
+  font-size: 45pt;
+  letter-spacing: 0px;
+  line-height: 45pt;
   padding-left: 20px;
   padding-top: 6.5px;
   width: 70%;
@@ -11528,6 +11532,13 @@ button.close {
   .item__image__text {
     display: block !important;
   }
+  .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
+    left: 18% !important;
+  }
+  .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
+    text-align: left !important;
+    width: 50% !important;
+  }
   .container .carousel.carousel--detail .carousel-control {
     display: block !important;
   }
@@ -11624,6 +11635,13 @@ button.close {
   .container--carousel {
     padding-bottom: 0px !important;
   }
+  .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
+    left: 18% !important;
+  }
+  .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
+    text-align: left !important;
+    width: 50% !important;
+  }
   .container--carousel .row .fullsize {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -11651,6 +11669,28 @@ button.close {
 }
 .container--carousel {
   padding-bottom: 50px;
+}
+.container--carousel.container--onepager.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption {
+  top: 60px;
+}
+.container--carousel.container--onepager.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__quote {
+  font-size: 34px;
+  position: relative;
+}
+.container--carousel.container--onepager.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  line-height: 14px;
+  margin-bottom: 22px;
+  margin-top: 22px;
+  text-align: center;
+  top: auto;
+  width: 100%;
+}
+.container--carousel.container--onepager.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__name,
+.container--carousel.container--onepager.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__relation {
+  display: none;
 }
 .container--carousel.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   bottom: 43.5px;
@@ -11748,8 +11788,6 @@ button.close {
   font-family: 'Crete Round', serif;
   font-size: 13.5px;
   height: 40.5px;
-  max-width: 155px;
-  width: 100%;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:hover,
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button:active {
@@ -11778,6 +11816,7 @@ button.close {
   display: inline-block;
   line-height: 41.5px;
   padding-right: 13px;
+  padding-left: 10px;
 }
 .container--carousel .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__button .carousel-caption__button__arrow svg {
   height: 23.5px;
@@ -12951,19 +12990,19 @@ button.close {
 .content .content__paragraaf h3,
 .content .content__paragraaf h2 {
   font-family: 'Crete Round', serif;
-  font-size: 21.66666667px;
+  font-size: 30pt;
   font-weight: bold;
-  line-height: 16.85185185px;
+  line-height: 35pt;
   margin-bottom: 3px;
   padding-bottom: 0px;
 }
 .content .content__paragraaf h3 {
-  font-size: 15.16666667px;
-  line-height: 18.77777778px;
+  font-size: 21pt;
+  line-height: 26pt;
 }
 .content .content__paragraaf h4 {
-  font-size: 11.55555556px;
-  line-height: 11.55555556px;
+  font-size: 16pt;
+  line-height: 16pt;
 }
 .content .content__paragraaf p {
   width: 90%;
@@ -13303,6 +13342,164 @@ button.close {
 }
 .scroll-top-wrapper .scroll-top-inner i.fa {
   line-height: inherit;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .onepager .onepager__image__container .onepager__image__content {
+    padding-left: 50% !important;
+    padding-right: 0% !important;
+  }
+}
+@media (min-width: 1200px) {
+  .onepager .onepager__image__container .onepager__image__content {
+    padding-left: 50% !important;
+    padding-right: 0% !important;
+  }
+}
+.onepager .onepager__button-group {
+  padding-left: 55px;
+}
+.onepager .onepager__button-group .btn {
+  border-radius: 20px !important;
+  font-family: 'Crete Round', serif;
+  font-size: 12px;
+  height: 42px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.onepager .onepager__image-container {
+  margin-top: 50px;
+  position: relative;
+}
+.onepager .onepager__image-container .onepager__image {
+  height: 373px;
+  width: 100%;
+}
+.onepager .onepager__image-container .onepager__image__content {
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+  right: 0px;
+  z-index: 1;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__title {
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 30px;
+  margin-bottom: 45px;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  top: 30px;
+  z-index: 1;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__description {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 15px;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button {
+  background: none;
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: 'Crete Round', serif;
+  font-size: 13.5px;
+  height: 40.5px;
+  max-width: 100%;
+  position: relative;
+  width: auto;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:hover,
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:active {
+  border-color: #aac426;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:hover .onepager__image__button__text,
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:active .onepager__image__button__text {
+  color: #aac426;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:hover .onepager__image__button__arrow svg path,
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:active .onepager__image__button__arrow svg path {
+  stroke: #aac426;
+  fill: #aac426;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:hover .onepager__image__button__arrow svg .circle,
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:active .onepager__image__button__arrow svg .circle {
+  fill: #aac426;
+  stroke: #aac426;
+  opacity: 0;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:hover .onepager__image__button__arrow svg .border,
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:active .onepager__image__button__arrow svg .border {
+  fill: #aac426;
+  stroke: #aac426;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:hover .onepager__image__button__arrow svg .arrow,
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button:active .onepager__image__button__arrow svg .arrow {
+  fill: #aac426;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__text {
+  float: left;
+  display: inline-block;
+  line-height: 33.5px;
+  margin-top: -3px;
+  padding-left: 50px;
+  padding-right: 15px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__arrow {
+  left: 24px;
+  position: absolute;
+  display: flex;
+  top: 8px;
+  width: 23.5px;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__arrow svg {
+  height: 23.5px;
+  width: 23.5px;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__arrow svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__arrow svg .circle {
+  fill: #ffffff;
+  stroke: #ffffff;
+  opacity: 0;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__arrow svg .border {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__arrow svg .arrow {
+  fill: #ffffff;
+}
+.onepager .onepager__quote {
+  background-color: #faf7d8;
+  height: 375px;
+  margin: 0 0 0 0;
+  padding: 10% 0;
+}
+.onepager .onepager__quote .onepager__quote__title {
+  border: none;
+  font-family: 'Crete Round', serif;
+  font-style: italic;
+  line-height: 30px;
+  margin-bottom: 31.5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 22.5px;
+  text-align: center;
+}
+.onepager .onepager__quote .onepager__quote__author {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .container,

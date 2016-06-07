@@ -8,6 +8,19 @@
       //padding-left: 0px !important;
       //padding-right: 0px !important;
     }
+    &.container--onepager {
+      .container--carousel__slides {
+        .container--carousel__slides__item {
+          .carousel-caption {
+            left: 18% !important;
+            .carousel-caption__text {
+              text-align: left !important;
+              width: 50% !important;
+            }
+          }
+        }
+      }
+    }
     .carousel {
       &.carousel--detail {
         .carousel-control {
@@ -127,6 +140,19 @@
   }
   .container--carousel {
       padding-bottom: 0px !important;
+    &.container--onepager {
+      .container--carousel__slides {
+        .container--carousel__slides__item {
+          .carousel-caption {
+            left: 18% !important;
+            .carousel-caption__text {
+              text-align: left !important;
+              width: 50% !important;
+            }
+          }
+        }
+      }
+    }
       .row {
         .fullsize {
           padding-left: 0px !important;
@@ -162,6 +188,36 @@
   //margin-left: -15px;
   //margin-right: -15px;
   padding-bottom: 50px;
+  &.container--onepager {
+    &.container--carousel-detail {
+      .container--carousel__slides {
+        .container--carousel__slides__item {
+          .carousel-caption {
+            top: 60px;
+            .carousel-caption__quote {
+              font-size: 34px;
+              position: relative;
+            }
+            .carousel-caption__text {
+              font-size: 14px;
+              font-family: @font-family-open-sanse;
+              font-weight: normal;
+              line-height: 14px;
+              margin-bottom: 22px;
+              margin-top: 22px;
+              text-align: center;
+              top: auto;
+              width: 100%;
+            }
+            .carousel-caption__name,
+            .carousel-caption__relation {
+              display:  none;
+            }
+          }
+        }
+      }
+    }
+  }
   &.container--carousel-detail {
     .container--carousel__slides {
       .container--carousel__slides__item {
@@ -271,8 +327,8 @@
           font-family: @font-family-crete;
           font-size: 27px * @retina-factor;
           height: 81px * @retina-factor;
-          max-width: 310px * @retina-factor;
-          width: 100%;
+          //max-width: 310px * @retina-factor;
+          //width: 100%;
           &:hover,
           &:active {
             border-color: @green;
@@ -301,6 +357,7 @@
             display: inline-block;
             line-height: 83px * @retina-factor;
             padding-right: 26px * @retina-factor;
+            padding-left: 10px;
             svg {
               height: 47px * @retina-factor;
               width: 47px * @retina-factor;
