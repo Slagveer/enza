@@ -62,7 +62,7 @@
           padding-bottom: 15px * @retina-factor;
           padding-top: 15px * @retina-factor;
           background: none;
-          border-width: 0;
+          //border-width: 0;
           float: right;
           font-size: 16px;
           line-height: @body-line-height * @retina-factor;
@@ -187,7 +187,8 @@
     }
     .navigation__menu__form {
       background: none;
-      border-width: 0;
+      //border-width: 0;
+      border: 1px solid @light-grey;
       float: right;
       font-size: @body * @retina-factor;
       line-height: @body-line-height * @retina-factor;
@@ -198,10 +199,12 @@
       width: 50%;
       .form-control {
         border-radius: 0px;
+        border: none;
         box-shadow: none;
         font-size: 16px;
       }
       .btn {
+        border: none;
         border-left: none;
         border-radius: 0px;
       }
