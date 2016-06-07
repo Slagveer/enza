@@ -11546,6 +11546,9 @@ button.close {
   .item__image__text {
     display: block !important;
   }
+  .container.container--onepager {
+    margin-bottom: -50px !important;
+  }
   .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
     left: 18% !important;
   }
@@ -13218,6 +13221,8 @@ button.close {
   font-size: 13.5px;
   height: 35px;
   padding: 0 15px;
+  padding-left: 10px;
+  padding-right: 0px;
   position: relative;
   width: 275px;
   -webkit-appearance: none;
