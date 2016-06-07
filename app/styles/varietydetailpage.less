@@ -3,6 +3,16 @@
 @media (min-width: @tablet_min) and (max-width: @tablet_max) {
   .variety-detail {
     margin-top: 50px;
+    &.onepager {
+      margin-top: 0px !important;
+      .col-xs-12 {
+        &:first-child {
+          .variety-detail__header {
+
+          }
+        }
+      }
+    }
     .fullsize {
       //margin-bottom: 2%;
       //margin-top: 2%;
@@ -89,6 +99,9 @@
       }
     }
     &.variety-detail {
+      &.onepager {
+        margin-top: 30px !important;
+      }
       .fullsize {
         //margin-bottom: 2%;
         //margin-top: 2%;
@@ -169,7 +182,7 @@
     .col-xs-12 {
       &:first-child {
         .variety-detail__header {
-          margin-top: 50px;
+          //margin-top: 50px;
         }
       }
     }

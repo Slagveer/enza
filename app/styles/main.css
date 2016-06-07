@@ -10242,6 +10242,9 @@ button.close {
   .variety-detail {
     margin-top: 50px;
   }
+  .variety-detail.onepager {
+    margin-top: 0px !important;
+  }
   .variety-detail .fullsize .variety-detail__social {
     border-bottom: none !important;
     border-top: none !important;
@@ -10311,6 +10314,9 @@ button.close {
     padding-top: 10px;
     width: 92%;
   }
+  .container.variety-detail.onepager {
+    margin-top: 30px !important;
+  }
   .container.variety-detail .fullsize {
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -10368,9 +10374,6 @@ button.close {
   .variety-detail .variety-detail__others .variety-detail__others__horizontal-list .list-group.list-group-horizontal {
     height: 260px !important;
   }
-}
-.variety-detail.onepager .col-xs-12:first-child .variety-detail__header {
-  margin-top: 50px;
 }
 .variety-detail .variety-detail__image {
   width: 100%;
