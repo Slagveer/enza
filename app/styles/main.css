@@ -13356,6 +13356,7 @@ button.close {
   }
 }
 .onepager .onepager__button-group {
+  margin-bottom: 50px;
   padding-left: 55px;
 }
 .onepager .onepager__button-group .btn {
@@ -13370,7 +13371,6 @@ button.close {
   padding-right: 40px;
 }
 .onepager .onepager__image-container {
-  margin-top: 50px;
   position: relative;
 }
 .onepager .onepager__image-container .onepager__image {
