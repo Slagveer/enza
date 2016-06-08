@@ -6748,7 +6748,7 @@ button.close {
     padding-right: 0px;
   }
   .navigation .container-fluid .navbar-header {
-    border-bottom: 1px solid #ededed;
+    border-bottom: 0px solid #ededed;
     float: none;
   }
   .navigation .container-fluid .navbar-header.flex {
@@ -6909,11 +6909,13 @@ button.close {
   border: none;
   box-shadow: none;
   font-size: 16px;
+  height: 43px;
 }
 .navigation .navigation__menu .navigation__menu__form .btn {
   border: none;
   border-left: none;
   border-radius: 0px;
+  height: 43px;
 }
 .navigation .navigation__menu .navigation__menu__item {
   background-color: #ffffff;
@@ -7110,7 +7112,8 @@ button.close {
   flex-shrink: 0;
   order: 4;
   padding: 0px 10px 0 0;
-  right: 10px;
+  position: relative;
+  right: 1px;
   top: 0px;
   width: 89px;
 }
@@ -7994,6 +7997,7 @@ button.close {
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item.open .dropdown-menu.desktop .dropdown-menu__form .input-group .btn {
     border: none;
     border-left: none;
+    height: 43px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu {
     border: none;
@@ -8005,7 +8009,7 @@ button.close {
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu.desktop .dropdown-menu__search {
     position: absolute;
-    right: -7px;
+    right: 0px;
     top: -60px;
   }
   .navigation .container-fluid .navigation__menu .navbar-nav .navigation__menu__item .dropdown-menu .navigation__menu__item {
@@ -8224,7 +8228,7 @@ button.close {
     border-top: 0px;
     max-width: 120px;
     top: 44px;
-    right: 0px;
+    right: -19px;
     width: 120px;
   }
   .navigation {
@@ -10071,6 +10075,19 @@ button.close {
     bottom: 16px !important;
     right: 60px !important;
   }
+  .varietylist .varietylist__item .varietylist__item__list .varietylist__item__list__title,
+  .varietylist .varietylist__item .varietylist__item__list .varietylist__item__list__description {
+    float: left;
+    margin-left: 25px;
+  }
+  .varietylist .varietylist__item .varietylist__item__list .varietylist__item__list__title {
+    clear: left;
+    margin-left: 0px;
+    width: 40% !important;
+  }
+  .varietylist .varietylist__item .varietylist__item__list .varietylist__item__list__description {
+    width: 40% !important;
+  }
 }
 @media (min-width: 1200px) {
   .varietylist.varietylist--office {
@@ -10165,7 +10182,7 @@ button.close {
   line-height: 6pt;
   margin-top: 7.5px;
   margin-left: 2.5px;
-  width: 30%;
+  width: 80%;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title,
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__description {
@@ -10175,7 +10192,10 @@ button.close {
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title {
   clear: left;
   margin-left: 0px;
-  width: 40%;
+  width: 20%;
+}
+.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__description {
+  width: 30%;
 }
 .varietylist .varietylist__item .varietylist__item__bottom {
   display: flex;
@@ -11308,6 +11328,14 @@ button.close {
     font-size: 9px;
     line-height: 40px;
     padding-right: 30px;
+  }
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country a,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country a,
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone a,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone a,
+  .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail a,
+  .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail a {
+    position: relative;
   }
   .navigation.footer .container-fluid .row .fullsize .footer__sub-menu,
   .navigation.footer .container .row .fullsize .footer__sub-menu {
@@ -13471,12 +13499,12 @@ button.close {
   display: inline-block;
   line-height: 33.5px;
   margin-top: -3px;
-  padding-left: 46px;
-  padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 41px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
 .onepager .onepager__image-container .onepager__image__content .onepager__image__button .onepager__image__button__arrow {
-  left: 15px;
+  right: 15px;
   position: absolute;
   display: flex;
   top: 8px;

@@ -21,7 +21,7 @@
       padding-left: 0px;
       padding-right: 0px;
       .navbar-header {
-        border-bottom: 1px solid @light-grey;
+        border-bottom: 0px solid @light-grey;
         float: none;
         &.flex {
           display: block;
@@ -202,11 +202,13 @@
         border: none;
         box-shadow: none;
         font-size: 16px;
+        height: 43px;
       }
       .btn {
         border: none;
         border-left: none;
         border-radius: 0px;
+        height: 43px;
       }
     }
     .navigation__menu__item {
@@ -429,7 +431,8 @@
       flex-shrink: 0;
       order: 4;
       padding: 0px 20px * @retina-factor 0 0;
-      right: 20px * @retina-factor;
+      position: relative;
+      right: 1px;//20px * @retina-factor;
       top: 0px;
       width: 178px * @retina-factor;//2 * (@navbar-height + @navbar-margin-bottom/2);
       .navigation__button__image {

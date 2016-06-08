@@ -81,7 +81,7 @@
       // Disable right click on images
       $('img').bind('contextmenu', function(e){
         console.error('This image is protected!');
-        e.preventDefault();
+        //e.preventDefault();
       });
     });
   });

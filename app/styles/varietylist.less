@@ -34,6 +34,21 @@
           right: 60px !important;
         }
       }
+      .varietylist__item__list {
+        .varietylist__item__list__title,
+        .varietylist__item__list__description {
+          float: left;
+          margin-left: 50px * @retina-factor;
+        }
+        .varietylist__item__list__title {
+          clear: left;
+          margin-left: 0px;
+          width: 40% !important;
+        }
+        .varietylist__item__list__description {
+          width: 40% !important;
+        }
+      }
     }
   }
 }
@@ -144,7 +159,7 @@
           line-height: @label-line-height * @retina-factor;
           margin-top: 15px * @retina-factor;
           margin-left: 5px * @retina-factor;
-          width: 30%;
+          width: 80%;
           .varietylist__item__list__title,
           .varietylist__item__list__description {
             float: left;
@@ -153,7 +168,10 @@
           .varietylist__item__list__title {
             clear: left;
             margin-left: 0px;
-            width: 40%;
+            width: 20%;
+          }
+          .varietylist__item__list__description {
+            width: 30%;
           }
         }
       }
