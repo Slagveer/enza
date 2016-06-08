@@ -9945,6 +9945,9 @@ button.close {
   height: auto;
   padding-right: 20px;
 }
+.itemslist.itemslist--extra-content .itemslist__item:hover {
+  background-color: #ffffff;
+}
 .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__image {
   height: 300px;
   margin-bottom: 15px;
@@ -9953,6 +9956,7 @@ button.close {
 }
 .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__link {
   right: 23px;
+  display: none;
 }
 .itemslist.itemslist--extra-content .itemslist__item .itemslist__item__content {
   padding-top: 5px;
