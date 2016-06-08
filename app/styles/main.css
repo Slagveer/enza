@@ -10335,7 +10335,7 @@ button.close {
     clear: left;
   }
   .variety-detail .variety-detail__brochures {
-    padding-left: 55px !important;
+    padding-left: 41px;
   }
   .variety-detail .variety-detail__brochures .variety-detail__brochures__title {
     padding-left: 0px !important;
@@ -10411,7 +10411,7 @@ button.close {
     clear: left;
   }
   .container.variety-detail .variety-detail__brochures {
-    padding-left: 55px !important;
+    padding-left: 41px;
   }
   .container.variety-detail .variety-detail__brochures .variety-detail__brochures__title {
     padding-left: 0px !important;
@@ -10495,10 +10495,10 @@ button.close {
   font-family: 'Crete Round', serif;
   font-size: 17px;
   margin-bottom: 11px;
-  padding-left: 14px;
+  padding-left: 0px;
 }
 .variety-detail .variety-detail__brochures .variety-detail__brochures__links {
-  padding-left: 14px;
+  padding-left: 0px;
   font-weight: bold;
 }
 .variety-detail .variety-detail__brochures .variety-detail__brochures__links .list-group .list-group-item {
@@ -11614,12 +11614,13 @@ button.close {
   }
   .container.container--onepager {
     margin-bottom: -50px !important;
+    padding-bottom: 50px !important;
   }
   .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
-    left: 18% !important;
+    left: 420px !important;
   }
   .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption.other-direction {
-    padding-left: 20%;
+    left: 160px !important;
   }
   .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
     text-align: left !important;
@@ -11721,11 +11722,15 @@ button.close {
   .container--carousel {
     padding-bottom: 0px !important;
   }
+  .container--carousel.container--onepager {
+    padding-bottom: 50px !important;
+  }
   .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
-    left: 18% !important;
+    left: 500px !important;
+    width: 80% !important;
   }
   .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption.other-direction {
-    padding-left: 20%;
+    left: 227px !important;
   }
   .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
     text-align: left !important;
@@ -12665,6 +12670,7 @@ button.close {
   box-shadow: none;
   font-family: 'Crete Round', serif;
   font-size: inherit;
+  height: 42px;
 }
 .searchresultlist .searchresultlist__input .searchresultlist__form .btn {
   border-left: none;
@@ -13439,22 +13445,21 @@ button.close {
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .onepager .onepager__image-container .onepager__image__content {
-    padding-left: 41% !important;
+    left: 390px !important;
     padding-right: 0% !important;
   }
   .onepager .onepager__image-container .onepager__image__content.other-direction {
-    padding-left: 18% !important;
+    left: 100px !important;
     right: inherit !important;
     width: 70% !important;
   }
 }
 @media (min-width: 1200px) {
   .onepager .onepager__image-container .onepager__image__content {
-    padding-left: 41% !important;
-    padding-right: 0% !important;
+    left: 46% !important;
   }
   .onepager .onepager__image-container .onepager__image__content.other-direction {
-    padding-left: 18% !important;
+    left: 18% !important;
     right: inherit!important;
     width: 70% !important;
   }
@@ -13483,12 +13488,16 @@ button.close {
 }
 .onepager .onepager__image-container .onepager__image__content {
   position: absolute;
-  top: 60px;
+  top: 0px;
   bottom: 0px;
   padding-left: 5%;
   padding-right: 5%;
-  right: 0px;
+  /* right: 0px; */
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .onepager .onepager__image-container .onepager__image__content .onepager__image__title {
   color: #ffffff;
@@ -13590,7 +13599,10 @@ button.close {
   border: none;
   height: 375px;
   margin: 0 0 0 0;
-  padding: 10% 0;
+  /* padding: 10% 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .onepager .onepager__quote .onepager__quote__title {
   border: none;

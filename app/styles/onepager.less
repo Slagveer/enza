@@ -3,10 +3,10 @@
   .onepager {
     .onepager__image-container {
       .onepager__image__content {
-        padding-left: 41% !important;
+        left: 390px !important;
         padding-right: 0% !important;
         &.other-direction {
-          padding-left: 18% !important;
+          left: 100px !important;
           right: inherit !important;
           width: 70% !important;
         }
@@ -21,10 +21,10 @@
   .onepager {
     .onepager__image-container {
       .onepager__image__content {
-        padding-left: 41% !important;
-        padding-right: 0% !important;
+        left: 46% !important;
+        //padding-right: 0% !important;
         &.other-direction {
-          padding-left: 18% !important;
+          left: 18% !important;
           right: inherit!important;
           width: 70% !important;
         }
@@ -58,12 +58,16 @@
     }
     .onepager__image__content {
       position: absolute;
-      top: 60px;
+      top: 0px;
       bottom: 0px;
       padding-left: 5%;
       padding-right: 5%;
-      right: 0px;
+      /* right: 0px; */
       z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
       .onepager__image__title {
         color: @white;
         font-family: @font-family-crete;
@@ -165,7 +169,10 @@
     border: none;
     height: 375px;
     margin: 0 0 0 0;
-    padding: 10% 0;
+    /* padding: 10% 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .onepager__quote__title {
       border: none;
       font-family: @font-family-crete;
