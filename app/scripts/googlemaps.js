@@ -104,14 +104,13 @@
     map.mapTypes.set('enza', enzaMapType);
     map.setMapTypeId('enza');
     forklift = {
-      //url: '/images/forklifttruck.png',
-      url: '/images/icon-map-marker-distributors.svg',
+      url: '/images/icon-map-marker-distributors.png',
       size: new google.maps.Size(60, 74),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
     }
     building = {
-      url: '/images/icon-map-marker-office.svg',
+      url: '/images/icon-map-marker-office.png',
       size: new google.maps.Size(60, 74),
       origin: new google.maps.Point(0, 0),
       anchor: new google.maps.Point(20, 64)
@@ -184,10 +183,6 @@
             icon: (office['Type'] === 'Commercial') ? building : forklift,
             map: map,
             title: markedCountry
-          });
-          officeMarkers.push(marker);
-          google.maps.event.addListener(_.last(officeMarkers), 'click', function() {
-            infowindow.open(map, this);
           });
         }
       });
