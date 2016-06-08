@@ -11618,6 +11618,9 @@ button.close {
   .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
     left: 18% !important;
   }
+  .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption.other-direction {
+    padding-left: 20%;
+  }
   .container.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
     text-align: left !important;
     width: 50% !important;
@@ -11721,6 +11724,9 @@ button.close {
   .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption {
     left: 18% !important;
   }
+  .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption.other-direction {
+    padding-left: 20%;
+  }
   .container--carousel.container--onepager .container--carousel__slides .container--carousel__slides__item .carousel-caption .carousel-caption__text {
     text-align: left !important;
     width: 50% !important;
@@ -11752,6 +11758,9 @@ button.close {
 }
 .container--carousel {
   padding-bottom: 50px;
+}
+.container--carousel.container--onepager {
+  margin-bottom: -50px;
 }
 .container--carousel.container--onepager.container--carousel-detail .container--carousel__slides .container--carousel__slides__item .carousel-caption {
   top: 60px;
@@ -13498,6 +13507,7 @@ button.close {
   margin-bottom: 15px;
   position: relative;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  width: 80%;
 }
 .onepager .onepager__image-container .onepager__image__content .onepager__image__button {
   background: none;
