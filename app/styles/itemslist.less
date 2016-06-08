@@ -25,7 +25,7 @@
     }
     &.itemslist {
       margin-top: 50px;
-      padding-left: 95px;
+      //padding-left: 95px;
       //paddinNog-right: 60px;
       .article--list {
         .itemslist__item {
@@ -35,11 +35,11 @@
           position: relative;
           overflow: hidden;
           .itemslist__item__image {
-            height: 173px;
+            height: 173px !important;
             margin-left: 0px;
-            max-width: 173px;
+            max-width: 173px !important;
             position: absolute !important;
-            width: 173px;
+            width: 173px !important;
           }
           .itemslist__item__content {
             padding-left: 254px;
@@ -222,9 +222,13 @@
   }
   .itemslist {
     margin-top: 50px;
-    padding-left: 95px;
+    //padding-left: 95px;
     &.itemslist--extra-content {
       .itemslist__item {
+        .itemslist__item__image {
+          height: 173px !important;
+          max-width: 173px !important;
+        }
         .itemslist__item__link {
           right: 28px !important;
         }
@@ -236,7 +240,7 @@
     .article--list {
       .itemslist__item {
         padding: 0px;
-        height: 173px;
+        height: 173px !important;
         margin-top: 24px;
         .itemslist__item__image {
           height: 173px;
@@ -296,6 +300,16 @@
   }
   &.itemslist--extra-content {
     .itemslist__item {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      padding-right: 20px;
+      .itemslist__item__image {
+        height: 300px;
+        margin-bottom: 15px;
+        width: 100%;
+        max-width: 100%;
+      }
       .itemslist__item__link {
         right: 23px;
       }
@@ -350,6 +364,7 @@
         text-align: left;
         &.extra-content {
           border: 0px;
+          font-family: @font-family-crete;
           font-size: 24px;
           padding-left: 0px;
           padding-bottom: 10px;
@@ -371,6 +386,9 @@
         padding-top: 20px;
       }
       .itemslist__item__description {
+        &.extra-content {
+          font-family: @font-family-open-sanse;
+        }
         &.block-with-text {
           display: block; /* Fallback for non-webkit */
           display: -webkit-box;
