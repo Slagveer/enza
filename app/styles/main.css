@@ -10207,10 +10207,6 @@ button.close {
   padding-left: 3px;
   text-decoration: none;
 }
-.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__phone:hover,
-.varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__mail:hover {
-  color: #aac426;
-}
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list {
   clear: left;
   float: left;
