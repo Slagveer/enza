@@ -13132,12 +13132,18 @@ button.close {
   color: #aac426;
 }
 .numberresults .numberresults__header .numberresults__header__container .numberresults__header__container__text {
+  color: #ededed;
   float: left;
-  font-size: 8.25pt;
-  font-weight: bold;
-  line-height: 35px;
+  font-family: 'Crete Round', serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 16px;
   margin-left: 10px;
+  text-align: left;
   vertical-align: middle;
+  white-space: normal;
+  word-wrap: break-word;
 }
 .docsdownload .docsdownload__brochures {
   border-bottom: 1px solid #ededed;
