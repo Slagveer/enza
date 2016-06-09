@@ -10844,7 +10844,7 @@ button.close {
   width: 100%;
 }
 .content .content__image--extra-small {
-  height: 355px;
+  height: 296px;
   margin-bottom: 20px;
   margin-top: 20px;
   padding: 9px 0 35.5px 0;
@@ -13171,7 +13171,7 @@ button.close {
   font-weight: bold;
 }
 .content .content__paragraaf figure embed {
-  height: 206px;
+  height: 296px;
   width: 100% !important;
 }
 .extra-content {
