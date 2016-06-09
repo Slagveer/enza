@@ -9300,7 +9300,7 @@ button.close {
 }
 .teaserbox {
   background-color: #fff;
-  border: 1px solid #ededed;
+  border: 0px solid #ededed;
   color: #aac426;
   display: block;
   height: 250px;
@@ -9347,6 +9347,7 @@ button.close {
 }
 .teaserbox.teaserbox--icon {
   background-color: #fff;
+  border: 1px solid #ededed;
   margin-right: -7.5px;
 }
 .teaserbox.teaserbox--icon .teaserbox__description {
@@ -11352,6 +11353,7 @@ button.close {
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
     padding-top: 10px;
+    display: flex !important;
   }
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
@@ -11359,6 +11361,10 @@ button.close {
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     clear: none;
     font-size: 9px;
     line-height: 40px;
