@@ -12884,6 +12884,25 @@ button.close {
   padding-top: 15px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
+  .content .person-contact {
+    border: none !important;
+    margin-top: 50px;
+  }
+  .content .person-contact .person-contact__information {
+    align-items: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0px !important;
+    border-bottom-width: 0px !important;
+    border-left-width: 0px !important;
+  }
+  .content .person-contact .person-contact__information .person-contact__information__image {
+    align-items: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+  }
   .person-contact {
     border-bottom: 1px solid #ededed;
     border-top: 1px solid #ededed;
@@ -12919,6 +12938,17 @@ button.close {
   }
 }
 @media (min-width: 1200px) {
+  .content .person-contact {
+    border: none !important;
+  }
+  .content .person-contact .person-contact__information {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 0px !important;
+    border-bottom-width: 0px !important;
+    border-left-width: 0px !important;
+  }
   .person-contact {
     border-bottom: 1px solid #ededed;
     border-top: 1px solid #ededed;
