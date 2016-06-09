@@ -270,6 +270,29 @@
           .info {
             font-size: 21px * @retina-factor;
             padding-left: 30px * @retina-factor;
+            &:nth-child(2) {
+              display: flex !important;
+              flex-direction: column;
+              justify-content: space-between;
+              .country {
+                flex: 3;
+              }
+              .phone {
+                flex: 1;
+              }
+              .mail {
+                flex: 4;
+              }
+              .copyright {
+                flex: 0;
+              }
+              .mail,
+              .phone {
+                .icon {
+                  height: 20px;
+                }
+              }
+            }
             .country,
             .copyright {
               clear: left;

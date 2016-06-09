@@ -11495,6 +11495,34 @@ button.close {
   font-size: 10.5px;
   padding-left: 15px;
 }
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2),
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .country,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .country {
+  flex: 3;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .phone,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .phone {
+  flex: 1;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .mail,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .mail {
+  flex: 4;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .copyright,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .copyright {
+  flex: 0;
+}
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .mail .icon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .mail .icon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info:nth-child(2) .phone .icon,
+.navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info:nth-child(2) .phone .icon {
+  height: 20px;
+}
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .country,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
 .navigation .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--contact .info .copyright,
