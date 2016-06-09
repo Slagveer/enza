@@ -90,6 +90,7 @@
         line-height: 70px * @retina-factor;
         margin-left: 20px * @retina-factor;
         vertical-align: middle;
+        word-wrap: break-word;
       }
       .filter__header__button__arrow {
         height: 50px * @retina-factor;
@@ -110,6 +111,7 @@
     border-top: 1px solid @light-grey;
     padding-bottom: 47px * @retina-factor;
     padding-top: 10px * @retina-factor;
+    word-wrap: break-word;
     .filter__selected__text,
     .filter__select__text{
       clear:both;
@@ -118,6 +120,7 @@
       font-size: 32px * @retina-factor;//@font-size-h3;
       margin-top: 54px * @retina-factor;
       width: 50%;
+      word-wrap: break-word;
     }
     .filter__select__text {
       width: 100%;
@@ -132,6 +135,7 @@
       line-height: 38px * @retina-factor;
       margin-top: 58px * @retina-factor;
       width: 140px * @retina-factor;
+      word-wrap: break-word;
       &:hover {
         background-color: @white;
         border-color: @green;
@@ -161,17 +165,36 @@
       margin-bottom: 10px * @retina-factor;
       margin-top: 40px * @retina-factor;
       padding-left: 0px;
+      li {
+        height: auto;
+        position: relative;
+        width: 100%;
+        .enza-checkbox__label {
+          position: relative;
+          top: -2px;
+          .label {
+            display: inline-block;
+            white-space: normal;
+            width: 200px;
+            max-width: 200px;
+            position: relative;
+            top: -2px;
+          }
+        }
+      }
       .filter__selected__options__item {
         background-color: lighten(@green, 43.5%);
         border: 1px solid @green;
         color: @green;
         font-size: 25px * @retina-factor;
         font-weight: bold;
-        height: 60px * @retina-factor;
+        height: auto;//60px * @retina-factor;
         line-height: 42px * @retina-factor;
         margin-bottom: 15px * @retina-factor;
         text-align: left;
+        white-space: normal;
         width: 100%;
+        word-wrap: break-word;
         .filter__selected__options__item__icon {
           display: inline-block;
           padding-right: 10px * @retina-factor;

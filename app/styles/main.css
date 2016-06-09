@@ -11034,12 +11034,16 @@ button.close {
   position: absolute;
   top: 0;
   width: 12.5px;
+  word-wrap: break-word;
 }
 .enza-checkbox .enza-checkbox__label .label {
   color: #000000;
   font-size: 12.5px;
   font-weight: bold;
   margin-left: 10px;
+  max-width: 100%;
+  text-align: left;
+  word-wrap: break-word;
 }
 .enza-checkbox .enza-checkbox__label:after {
   background: transparent;
@@ -11154,6 +11158,7 @@ button.close {
   line-height: 35px;
   margin-left: 10px;
   vertical-align: middle;
+  word-wrap: break-word;
 }
 .filter .filter__header .filter__header__button .filter__header__button__arrow {
   height: 25px;
@@ -11170,6 +11175,7 @@ button.close {
   border-top: 1px solid #ededed;
   padding-bottom: 23.5px;
   padding-top: 5px;
+  word-wrap: break-word;
 }
 .filter .filter__selected .filter__selected__text,
 .filter .filter__select .filter__selected__text,
@@ -11181,6 +11187,7 @@ button.close {
   font-size: 16px;
   margin-top: 27px;
   width: 50%;
+  word-wrap: break-word;
 }
 .filter .filter__selected .filter__select__text,
 .filter .filter__select .filter__select__text {
@@ -11198,6 +11205,7 @@ button.close {
   line-height: 19px;
   margin-top: 29px;
   width: 70px;
+  word-wrap: break-word;
 }
 .filter .filter__selected .filter__selected__button:hover,
 .filter .filter__select .filter__selected__button:hover,
@@ -11237,6 +11245,32 @@ button.close {
   margin-top: 20px;
   padding-left: 0px;
 }
+.filter .filter__selected .filter__selected__options li,
+.filter .filter__select .filter__selected__options li,
+.filter .filter__selected .filter__select__options li,
+.filter .filter__select .filter__select__options li {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+.filter .filter__selected .filter__selected__options li .enza-checkbox__label,
+.filter .filter__select .filter__selected__options li .enza-checkbox__label,
+.filter .filter__selected .filter__select__options li .enza-checkbox__label,
+.filter .filter__select .filter__select__options li .enza-checkbox__label {
+  position: relative;
+  top: -2px;
+}
+.filter .filter__selected .filter__selected__options li .enza-checkbox__label .label,
+.filter .filter__select .filter__selected__options li .enza-checkbox__label .label,
+.filter .filter__selected .filter__select__options li .enza-checkbox__label .label,
+.filter .filter__select .filter__select__options li .enza-checkbox__label .label {
+  display: inline-block;
+  white-space: normal;
+  width: 200px;
+  max-width: 200px;
+  position: relative;
+  top: -2px;
+}
 .filter .filter__selected .filter__selected__options .filter__selected__options__item,
 .filter .filter__select .filter__selected__options .filter__selected__options__item,
 .filter .filter__selected .filter__select__options .filter__selected__options__item,
@@ -11246,11 +11280,13 @@ button.close {
   color: #aac426;
   font-size: 12.5px;
   font-weight: bold;
-  height: 30px;
+  height: auto;
   line-height: 21px;
   margin-bottom: 7.5px;
   text-align: left;
+  white-space: normal;
   width: 100%;
+  word-wrap: break-word;
 }
 .filter .filter__selected .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon,
 .filter .filter__select .filter__selected__options .filter__selected__options__item .filter__selected__options__item__icon,
