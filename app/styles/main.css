@@ -10177,7 +10177,7 @@ button.close {
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content {
   flex-grow: 5;
-  height: 90px;
+  height: auto;
   padding-left: 14px;
   position: relative;
 }
@@ -10221,6 +10221,7 @@ button.close {
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__description {
   float: left;
   margin-left: 25px;
+  word-break: break-all;
 }
 .varietylist .varietylist__item .varietylist__item__top .varietylist__item__content .varietylist__item__list .varietylist__item__list__title {
   clear: left;
@@ -11297,6 +11298,7 @@ button.close {
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info {
     padding-top: 10px;
+    display: flex !important;
   }
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .country,
@@ -11304,6 +11306,10 @@ button.close {
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .phone,
   .navigation.footer .container-fluid .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail,
   .navigation.footer .container .row .fullsize .footer__menu .footer__menu__item .footer__menu__item__label.footer__menu__item__label--social .info .mail {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     clear: none;
     font-size: 9px;
     line-height: 40px;

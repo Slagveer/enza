@@ -131,7 +131,7 @@
       }
       .varietylist__item__content {
         flex-grow: 5;
-        height: 180px * @retina-factor;
+        height: auto;//180px * @retina-factor;
         padding-left: 28px * @retina-factor;
         position: relative;
         .varietylist__item__title {
@@ -177,6 +177,7 @@
           .varietylist__item__list__description {
             float: left;
             margin-left: 50px * @retina-factor;
+            word-break: break-all;
           }
           .varietylist__item__list__title {
             clear: left;
