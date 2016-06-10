@@ -11751,9 +11751,8 @@ button.close {
     display: block !important;
   }
   .carousel.carousel--detail .carousel-control .glyphicon {
-    height: 100%;
     position: absolute;
-    top: 0px;
+    top: 46%;
     width: 30px;
   }
   .carousel.carousel--detail .carousel-control .glyphicon.left {
